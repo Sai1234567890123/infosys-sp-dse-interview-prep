@@ -1,0 +1,500 @@
+[2008E](https://codeforces.com/problemset/problem/2008/E)
+[Alternating String](https://codeforces.com/problemset/problem/2008/E)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [data structures](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=data+structures), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation), [strings](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=strings)
+1500
+[x14305](https://codeforces.com/problemset/status/2008/problem/E)
+[1851E](https://codeforces.com/problemset/problem/1851/E)
+[Nastya and Potions](https://codeforces.com/problemset/problem/1851/E)
+[dfs and similar](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dfs+and+similar), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [graphs](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=graphs), [sortings](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=sortings)
+1500
+[x13831](https://codeforces.com/problemset/status/1851/problem/E)
+[1234C](https://codeforces.com/problemset/problem/1234/C)
+[Pipes](https://codeforces.com/problemset/problem/1234/C)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation)
+1500
+[x13767](https://codeforces.com/problemset/status/1234/problem/C)
+[1858B](https://codeforces.com/problemset/problem/1858/B)
+[The Walkway](https://codeforces.com/problemset/problem/1858/B)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math), [number theory](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=number+theory)
+1500
+[x13290](https://codeforces.com/problemset/status/1858/problem/B)
+[1738C](https://codeforces.com/problemset/problem/1738/C)
+[Even Number Addicts](https://codeforces.com/problemset/problem/1738/C)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [games](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=games), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1500
+[x13161](https://codeforces.com/problemset/status/1738/problem/C)
+[1084C](https://codeforces.com/problemset/problem/1084/C)
+[The Fair Nut and String](https://codeforces.com/problemset/problem/1084/C)
+[combinatorics](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=combinatorics), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation)
+1500
+[x12915](https://codeforces.com/problemset/status/1084/problem/C)
+[2106D](https://codeforces.com/problemset/problem/2106/D)
+[Flower Boy](https://codeforces.com/problemset/problem/2106/D)
+[binary search](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=binary+search), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [two pointers](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=two+pointers)
+1500
+[x12880](https://codeforces.com/problemset/status/2106/problem/D)
+[1307C](https://codeforces.com/problemset/problem/1307/C)
+[Cow and Message](https://codeforces.com/problemset/problem/1307/C)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math), [strings](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=strings)
+1500
+[x12872](https://codeforces.com/problemset/status/1307/problem/C)
+[1759E](https://codeforces.com/problemset/problem/1759/E)
+[The Humanoid](https://codeforces.com/problemset/problem/1759/E)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [sortings](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=sortings)
+1500
+[x12839](https://codeforces.com/problemset/status/1759/problem/E)
+[2072E](https://codeforces.com/problemset/problem/2072/E)
+[Do You Love Your Hero and His Two-Hit Multi-Target Attacks?](https://codeforces.com/problemset/problem/2072/E)
+[binary search](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=binary+search), [brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [constructive algorithms](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=constructive+algorithms), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [geometry](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=geometry), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1500
+[x12838](https://codeforces.com/problemset/status/2072/problem/E)
+[1461C](https://codeforces.com/problemset/problem/1461/C)
+[Random Events](https://codeforces.com/problemset/problem/1461/C)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math), [probabilities](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=probabilities)
+1500
+[x12837](https://codeforces.com/problemset/status/1461/problem/C)
+[2053C](https://codeforces.com/problemset/problem/2053/C)
+[Bewitching Stargazer](https://codeforces.com/problemset/problem/2053/C)
+[bitmasks](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=bitmasks), [divide and conquer](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=divide+and+conquer), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1500
+[x12745](https://codeforces.com/problemset/status/2053/problem/C)
+[2107C](https://codeforces.com/problemset/problem/2107/C)
+[Maximum Subarray Sum](https://codeforces.com/problemset/problem/2107/C)
+[binary search](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=binary+search), [constructive algorithms](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=constructive+algorithms), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1500
+[x12713](https://codeforces.com/problemset/status/2107/problem/C)
+[264B](https://codeforces.com/problemset/problem/264/B)
+[Good Sequences](https://codeforces.com/problemset/problem/264/B)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [number theory](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=number+theory)
+1500
+[x12555](https://codeforces.com/problemset/status/264/problem/B)
+[2147C](https://codeforces.com/problemset/problem/2147/C)
+[Rabbits](https://codeforces.com/problemset/problem/2147/C)
+[constructive algorithms](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=constructive+algorithms), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation)
+1500
+[x12524](https://codeforces.com/problemset/status/2147/problem/C)
+[877B](https://codeforces.com/problemset/problem/877/B)
+[Nikita and string](https://codeforces.com/problemset/problem/877/B)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp)
+1500
+[x12297](https://codeforces.com/problemset/status/877/problem/B)
+[1105C](https://codeforces.com/problemset/problem/1105/C)
+[Ayoub and Lost Array](https://codeforces.com/problemset/problem/1105/C)
+[combinatorics](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=combinatorics), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1500
+[x11919](https://codeforces.com/problemset/status/1105/problem/C)
+[1753A2](https://codeforces.com/problemset/problem/1753/A2)
+[Make Nonzero Sum (hard version)](https://codeforces.com/problemset/problem/1753/A2)
+[constructive algorithms](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=constructive+algorithms), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy)
+1500
+[x11870](https://codeforces.com/problemset/status/1753/problem/A2)
+[1005D](https://codeforces.com/problemset/problem/1005/D)
+[Polycarp and Div 3](https://codeforces.com/problemset/problem/1005/D)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [number theory](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=number+theory)
+1500
+[x11705](https://codeforces.com/problemset/status/1005/problem/D)
+[1614C](https://codeforces.com/problemset/problem/1614/C)
+[Divan and bitwise operations](https://codeforces.com/problemset/problem/1614/C)
+[bitmasks](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=bitmasks), [combinatorics](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=combinatorics), [constructive algorithms](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=constructive+algorithms), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1500
+[x11531](https://codeforces.com/problemset/status/1614/problem/C)
+[1767D](https://codeforces.com/problemset/problem/1767/D)
+[Playoff](https://codeforces.com/problemset/problem/1767/D)
+[combinatorics](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=combinatorics), [constructive algorithms](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=constructive+algorithms), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1500
+[x11438](https://codeforces.com/problemset/status/1767/problem/D)
+[1313C1](https://codeforces.com/problemset/problem/1313/C1)
+[Skyscrapers (easy version)](https://codeforces.com/problemset/problem/1313/C1)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [data structures](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=data+structures), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy)
+1500
+[x11234](https://codeforces.com/problemset/status/1313/problem/C1)
+[1207C](https://codeforces.com/problemset/problem/1207/C)
+[Gas Pipeline](https://codeforces.com/problemset/problem/1207/C)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy)
+1500
+[x10840](https://codeforces.com/problemset/status/1207/problem/C)
+[1739C](https://codeforces.com/problemset/problem/1739/C)
+[Card Game](https://codeforces.com/problemset/problem/1739/C)
+[combinatorics](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=combinatorics), [constructive algorithms](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=constructive+algorithms), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [games](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=games)
+1500
+[x10329](https://codeforces.com/problemset/status/1739/problem/C)
+[553A](https://codeforces.com/problemset/problem/553/A)
+[Kyoya and Colored Balls](https://codeforces.com/problemset/problem/553/A)
+[combinatorics](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=combinatorics), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1500
+[x10310](https://codeforces.com/problemset/status/553/problem/A)
+[1789C](https://codeforces.com/problemset/problem/1789/C)
+[Serval and Toxel's Arrays](https://codeforces.com/problemset/problem/1789/C)
+[combinatorics](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=combinatorics), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1500
+[x10153](https://codeforces.com/problemset/status/1789/problem/C)
+[855B](https://codeforces.com/problemset/problem/855/B)
+[Marvolo Gaunt's Ring](https://codeforces.com/problemset/problem/855/B)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [data structures](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=data+structures), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp)
+1500
+[x10092](https://codeforces.com/problemset/status/855/problem/B)
+[1051C](https://codeforces.com/problemset/problem/1051/C)
+[Vasya and Multisets](https://codeforces.com/problemset/problem/1051/C)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1500
+[x10046](https://codeforces.com/problemset/status/1051/problem/C)
+[2195E](https://codeforces.com/problemset/problem/2195/E)
+[Idiot First Search](https://codeforces.com/problemset/problem/2195/E)
+[dfs and similar](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dfs+and+similar), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [trees](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=trees)
+1500
+[x9948](https://codeforces.com/problemset/status/2195/problem/E)
+[2163C](https://codeforces.com/problemset/problem/2163/C)
+[Monopati](https://codeforces.com/problemset/problem/2163/C)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [combinatorics](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=combinatorics), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math), [two pointers](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=two+pointers)
+1500
+[x9881](https://codeforces.com/problemset/status/2163/problem/C)
+[1408C](https://codeforces.com/problemset/problem/1408/C)
+[Discrete Acceleration](https://codeforces.com/problemset/problem/1408/C)
+[binary search](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=binary+search), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math), [two pointers](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=two+pointers)
+1500
+[x9413](https://codeforces.com/problemset/status/1408/problem/C)
+[873B](https://codeforces.com/problemset/problem/873/B)
+[Balanced Substring](https://codeforces.com/problemset/problem/873/B)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation)
+1500
+[x9332](https://codeforces.com/problemset/status/873/problem/B)
+[611C](https://codeforces.com/problemset/problem/611/C)
+[New Year and Domino](https://codeforces.com/problemset/problem/611/C)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation)
+1500
+[x9290](https://codeforces.com/problemset/status/611/problem/C)
+[2234D](https://codeforces.com/problemset/problem/2234/D)
+[XOR, Expression and Two Binary Numbers](https://codeforces.com/problemset/problem/2234/D)
+[bitmasks](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=bitmasks), [divide and conquer](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=divide+and+conquer), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math), [number theory](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=number+theory)
+1500
+[x9228](https://codeforces.com/problemset/status/2234/problem/D)
+[332B](https://codeforces.com/problemset/problem/332/B)
+[Maximum Absurdity](https://codeforces.com/problemset/problem/332/B)
+[data structures](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=data+structures), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation)
+1500
+[x8901](https://codeforces.com/problemset/status/332/problem/B)
+[1081C](https://codeforces.com/problemset/problem/1081/C)
+[Colorful Bricks](https://codeforces.com/problemset/problem/1081/C)
+[combinatorics](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=combinatorics), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1500
+[x8862](https://codeforces.com/problemset/status/1081/problem/C)
+[2228C1](https://codeforces.com/problemset/problem/2228/C1)
+[Cirno and Number (Easy Version)](https://codeforces.com/problemset/problem/2228/C1)
+[binary search](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=binary+search), [brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation)
+1500
+[x8506](https://codeforces.com/problemset/status/2228/problem/C1)
+[340D](https://codeforces.com/problemset/problem/340/D)
+[Bubble Sort Graph](https://codeforces.com/problemset/problem/340/D)
+[binary search](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=binary+search), [data structures](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=data+structures), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp)
+1500
+[x8083](https://codeforces.com/problemset/status/340/problem/D)
+[991D](https://codeforces.com/problemset/problem/991/D)
+[Bishwock](https://codeforces.com/problemset/problem/991/D)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy)
+1500
+[x7830](https://codeforces.com/problemset/status/991/problem/D)
+[204A](https://codeforces.com/problemset/problem/204/A)
+[Little Elephant and Interval](https://codeforces.com/problemset/problem/204/A)
+[binary search](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=binary+search), [combinatorics](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=combinatorics), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp)
+1500
+[x6848](https://codeforces.com/problemset/status/204/problem/A)
+[2222C](https://codeforces.com/problemset/problem/2222/C)
+[Median Partition](https://codeforces.com/problemset/problem/2222/C)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1500
+[x6626](https://codeforces.com/problemset/status/2222/problem/C)
+[859C](https://codeforces.com/problemset/problem/859/C)
+[Pie Rules](https://codeforces.com/problemset/problem/859/C)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [games](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=games)
+1500
+[x6311](https://codeforces.com/problemset/status/859/problem/C)
+[761C](https://codeforces.com/problemset/problem/761/C)
+[Dasha and Password](https://codeforces.com/problemset/problem/761/C)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation)
+1500
+[x6073](https://codeforces.com/problemset/status/761/problem/C)
+[858C](https://codeforces.com/problemset/problem/858/C)
+[Did you mean...](https://codeforces.com/problemset/problem/858/C)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation)
+1500
+[x5930](https://codeforces.com/problemset/status/858/problem/C)
+[255C](https://codeforces.com/problemset/problem/255/C)
+[Almost Arithmetical Progression](https://codeforces.com/problemset/problem/255/C)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp)
+1500
+[x5127](https://codeforces.com/problemset/status/255/problem/C)
+[868C](https://codeforces.com/problemset/problem/868/C)
+[Qualification Rounds](https://codeforces.com/problemset/problem/868/C)
+[bitmasks](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=bitmasks), [brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [constructive algorithms](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=constructive+algorithms), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp)
+1500
+[x5118](https://codeforces.com/problemset/status/868/problem/C)
+[22B](https://codeforces.com/problemset/problem/22/B)
+[Bargaining Table](https://codeforces.com/problemset/problem/22/B)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp)
+1500
+[x4968](https://codeforces.com/problemset/status/22/problem/B)
+[159D](https://codeforces.com/problemset/problem/159/D)
+[Palindrome pairs](https://codeforces.com/problemset/problem/159/D)
+[*special problem](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=*special), [brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [strings](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=strings)
+1500
+[x4771](https://codeforces.com/problemset/status/159/problem/D)
+[191A](https://codeforces.com/problemset/problem/191/A)
+[Dynasty Puzzles](https://codeforces.com/problemset/problem/191/A)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp)
+1500
+[x4703](https://codeforces.com/problemset/status/191/problem/A)
+[566F](https://codeforces.com/problemset/problem/566/F)
+[Clique in the Divisibility Graph](https://codeforces.com/problemset/problem/566/F)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math), [number theory](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=number+theory)
+1500
+[x4422](https://codeforces.com/problemset/status/566/problem/F)
+[417A](https://codeforces.com/problemset/problem/417/A)
+[Elimination](https://codeforces.com/problemset/problem/417/A)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1500
+[x3466](https://codeforces.com/problemset/status/417/problem/A)
+[212E](https://codeforces.com/problemset/problem/212/E)
+[IT Restaurants](https://codeforces.com/problemset/problem/212/E)
+[dfs and similar](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dfs+and+similar), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [trees](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=trees)
+1500
+[x2424](https://codeforces.com/problemset/status/212/problem/E)
+[10B](https://codeforces.com/problemset/problem/10/B)
+[Cinema Cashier](https://codeforces.com/problemset/problem/10/B)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation)
+1500
+[x2163](https://codeforces.com/problemset/status/10/problem/B)
+[74B](https://codeforces.com/problemset/problem/74/B)
+[Train](https://codeforces.com/problemset/problem/74/B)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [games](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=games), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy)
+1500
+[x1817](https://codeforces.com/problemset/status/74/problem/B)
+[1398C](https://codeforces.com/problemset/problem/1398/C)
+[Good Subarrays](https://codeforces.com/problemset/problem/1398/C)
+[data structures](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=data+structures), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1600
+[x40618](https://codeforces.com/problemset/status/1398/problem/C)
+[431C](https://codeforces.com/problemset/problem/431/C)
+[k-Tree](https://codeforces.com/problemset/problem/431/C)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation), [trees](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=trees)
+1600
+[x31208](https://codeforces.com/problemset/status/431/problem/C)
+[1336A](https://codeforces.com/problemset/problem/1336/A)
+[Linova and Kingdom](https://codeforces.com/problemset/problem/1336/A)
+[dfs and similar](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dfs+and+similar), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [sortings](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=sortings), [trees](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=trees)
+1600
+[x26155](https://codeforces.com/problemset/status/1336/problem/A)
+[1389B](https://codeforces.com/problemset/problem/1389/B)
+[Array Walk](https://codeforces.com/problemset/problem/1389/B)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy)
+1600
+[x21537](https://codeforces.com/problemset/status/1389/problem/B)
+[706C](https://codeforces.com/problemset/problem/706/C)
+[Hard problem](https://codeforces.com/problemset/problem/706/C)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [strings](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=strings)
+1600
+[x20575](https://codeforces.com/problemset/status/706/problem/C)
+[1528A](https://codeforces.com/problemset/problem/1528/A)
+[Parsa's Humongous Tree](https://codeforces.com/problemset/problem/1528/A)
+[dfs and similar](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dfs+and+similar), [divide and conquer](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=divide+and+conquer), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [trees](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=trees)
+1600
+[x20559](https://codeforces.com/problemset/status/1528/problem/A)
+[1633D](https://codeforces.com/problemset/problem/1633/D)
+[Make Them Equal](https://codeforces.com/problemset/problem/1633/D)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy)
+1600
+[x20256](https://codeforces.com/problemset/status/1633/problem/D)
+[1856C](https://codeforces.com/problemset/problem/1856/C)
+[To Become Max](https://codeforces.com/problemset/problem/1856/C)
+[binary search](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=binary+search), [brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [data structures](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=data+structures), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp)
+1600
+[x19911](https://codeforces.com/problemset/status/1856/problem/C)
+[1741E](https://codeforces.com/problemset/problem/1741/E)
+[Sending a Sequence Over the Network](https://codeforces.com/problemset/problem/1741/E)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp)
+1600
+[x19339](https://codeforces.com/problemset/status/1741/problem/E)
+[1373D](https://codeforces.com/problemset/problem/1373/D)
+[Maximum Sum on Even Positions](https://codeforces.com/problemset/problem/1373/D)
+[divide and conquer](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=divide+and+conquer), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation)
+1600
+[x18272](https://codeforces.com/problemset/status/1373/problem/D)
+[1519D](https://codeforces.com/problemset/problem/1519/D)
+[Maximum Sum of Products](https://codeforces.com/problemset/problem/1519/D)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math), [two pointers](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=two+pointers)
+1600
+[x18165](https://codeforces.com/problemset/status/1519/problem/D)
+[1537E1](https://codeforces.com/problemset/problem/1537/E1)
+[Erase and Extend (Easy Version)](https://codeforces.com/problemset/problem/1537/E1)
+[binary search](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=binary+search), [brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [hashing](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=hashing), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation), [string suffix structures](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=string+suffix+structures), [strings](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=strings), [two pointers](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=two+pointers)
+1600
+[x17340](https://codeforces.com/problemset/status/1537/problem/E1)
+[1513C](https://codeforces.com/problemset/problem/1513/C)
+[Add One](https://codeforces.com/problemset/problem/1513/C)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [matrices](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=matrices)
+1600
+[x17200](https://codeforces.com/problemset/status/1513/problem/C)
+[1829G](https://codeforces.com/problemset/problem/1829/G)
+[Hits Different](https://codeforces.com/problemset/problem/1829/G)
+[data structures](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=data+structures), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1600
+[x16591](https://codeforces.com/problemset/status/1829/problem/G)
+[1555D](https://codeforces.com/problemset/problem/1555/D)
+[Say No to Palindromes](https://codeforces.com/problemset/problem/1555/D)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [constructive algorithms](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=constructive+algorithms), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [strings](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=strings)
+1600
+[x16405](https://codeforces.com/problemset/status/1555/problem/D)
+[2129B](https://codeforces.com/problemset/problem/2129/B)
+[Stay or Mirror](https://codeforces.com/problemset/problem/2129/B)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [data structures](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=data+structures), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [sortings](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=sortings)
+1600
+[x16287](https://codeforces.com/problemset/status/2129/problem/B)
+[1288C](https://codeforces.com/problemset/problem/1288/C)
+[Two Arrays](https://codeforces.com/problemset/problem/1288/C)
+[combinatorics](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=combinatorics), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp)
+1600
+[x16163](https://codeforces.com/problemset/status/1288/problem/C)
+[2063C](https://codeforces.com/problemset/problem/2063/C)
+[Remove Exactly Two](https://codeforces.com/problemset/problem/2063/C)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [data structures](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=data+structures), [dfs and similar](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dfs+and+similar), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [graphs](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=graphs), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [sortings](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=sortings), [trees](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=trees)
+1600
+[x15578](https://codeforces.com/problemset/status/2063/problem/C)
+[1395C](https://codeforces.com/problemset/problem/1395/C)
+[Boboniu and Bit Operations](https://codeforces.com/problemset/problem/1395/C)
+[bitmasks](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=bitmasks), [brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy)
+1600
+[x15546](https://codeforces.com/problemset/status/1395/problem/C)
+[1946C](https://codeforces.com/problemset/problem/1946/C)
+[Tree Cutting](https://codeforces.com/problemset/problem/1946/C)
+[binary search](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=binary+search), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation), [trees](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=trees)
+1600
+[x14459](https://codeforces.com/problemset/status/1946/problem/C)
+[1632C](https://codeforces.com/problemset/problem/1632/C)
+[Strange Test](https://codeforces.com/problemset/problem/1632/C)
+[binary search](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=binary+search), [bitmasks](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=bitmasks), [brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1600
+[x14329](https://codeforces.com/problemset/status/1632/problem/C)
+[1689C](https://codeforces.com/problemset/problem/1689/C)
+[Infected Tree](https://codeforces.com/problemset/problem/1689/C)
+[dfs and similar](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dfs+and+similar), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [trees](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=trees)
+1600
+[x14287](https://codeforces.com/problemset/status/1689/problem/C)
+[2085C](https://codeforces.com/problemset/problem/2085/C)
+[Serval and The Formula](https://codeforces.com/problemset/problem/2085/C)
+[bitmasks](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=bitmasks), [constructive algorithms](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=constructive+algorithms), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy)
+1600
+[x14274](https://codeforces.com/problemset/status/2085/problem/C)
+[165C](https://codeforces.com/problemset/problem/165/C)
+[Another Problem on Strings](https://codeforces.com/problemset/problem/165/C)
+[binary search](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=binary+search), [brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math), [strings](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=strings), [two pointers](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=two+pointers)
+1600
+[x14213](https://codeforces.com/problemset/status/165/problem/C)
+[1994C](https://codeforces.com/problemset/problem/1994/C)
+[Hungry Games](https://codeforces.com/problemset/problem/1994/C)
+[binary search](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=binary+search), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [two pointers](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=two+pointers)
+1600
+[x14180](https://codeforces.com/problemset/status/1994/problem/C)
+[1295C](https://codeforces.com/problemset/problem/1295/C)
+[Obtain The String](https://codeforces.com/problemset/problem/1295/C)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [strings](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=strings)
+1600
+[x14142](https://codeforces.com/problemset/status/1295/problem/C)
+[1722E](https://codeforces.com/problemset/problem/1722/E)
+[Counting Rectangles](https://codeforces.com/problemset/problem/1722/E)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [data structures](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=data+structures), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation)
+1600
+[x14074](https://codeforces.com/problemset/status/1722/problem/E)
+[446A](https://codeforces.com/problemset/problem/446/A)
+[DZY Loves Sequences](https://codeforces.com/problemset/problem/446/A)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation), [two pointers](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=two+pointers)
+1600
+[x13836](https://codeforces.com/problemset/status/446/problem/A)
+[1748C](https://codeforces.com/problemset/problem/1748/C)
+[Zero-Sum Prefixes](https://codeforces.com/problemset/problem/1748/C)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [data structures](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=data+structures), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation)
+1600
+[x13457](https://codeforces.com/problemset/status/1748/problem/C)
+[1455D](https://codeforces.com/problemset/problem/1455/D)
+[Sequence and Swaps](https://codeforces.com/problemset/problem/1455/D)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [sortings](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=sortings)
+1600
+[x13431](https://codeforces.com/problemset/status/1455/problem/D)
+[1567C](https://codeforces.com/problemset/problem/1567/C)
+[Carrying Conundrum](https://codeforces.com/problemset/problem/1567/C)
+[bitmasks](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=bitmasks), [combinatorics](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=combinatorics), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1600
+[x13415](https://codeforces.com/problemset/status/1567/problem/C)
+[1151B](https://codeforces.com/problemset/problem/1151/B)
+[Dima and a Bad XOR](https://codeforces.com/problemset/problem/1151/B)
+[bitmasks](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=bitmasks), [brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [constructive algorithms](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=constructive+algorithms), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp)
+1600
+[x13283](https://codeforces.com/problemset/status/1151/problem/B)
+[1703G](https://codeforces.com/problemset/problem/1703/G)
+[Good Key, Bad Key](https://codeforces.com/problemset/problem/1703/G)
+[bitmasks](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=bitmasks), [brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1600
+[x13212](https://codeforces.com/problemset/status/1703/problem/G)
+[2128D](https://codeforces.com/problemset/problem/2128/D)
+[Sum of LDS](https://codeforces.com/problemset/problem/2128/D)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [combinatorics](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=combinatorics), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1600
+[x13189](https://codeforces.com/problemset/status/2128/problem/D)
+[1498C](https://codeforces.com/problemset/problem/1498/C)
+[Planar Reflections](https://codeforces.com/problemset/problem/1498/C)
+[brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [data structures](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=data+structures), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp)
+1600
+[x12887](https://codeforces.com/problemset/status/1498/problem/C)
+[1976C](https://codeforces.com/problemset/problem/1976/C)
+[Job Interview](https://codeforces.com/problemset/problem/1976/C)
+[binary search](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=binary+search), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation), [two pointers](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=two+pointers)
+1600
+[x12815](https://codeforces.com/problemset/status/1976/problem/C)
+[1941E](https://codeforces.com/problemset/problem/1941/E)
+[Rudolf and k Bridges](https://codeforces.com/problemset/problem/1941/E)
+[binary search](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=binary+search), [data structures](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=data+structures), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [two pointers](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=two+pointers)
+1600
+[x12481](https://codeforces.com/problemset/status/1941/problem/E)
+[1476C](https://codeforces.com/problemset/problem/1476/C)
+[Longest Simple Cycle](https://codeforces.com/problemset/problem/1476/C)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [graphs](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=graphs), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy)
+1600
+[x12463](https://codeforces.com/problemset/status/1476/problem/C)
+[763A](https://codeforces.com/problemset/problem/763/A)
+[Timofey and a tree](https://codeforces.com/problemset/problem/763/A)
+[dfs and similar](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dfs+and+similar), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [dsu](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dsu), [graphs](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=graphs), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation), [trees](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=trees)
+1600
+[x12415](https://codeforces.com/problemset/status/763/problem/A)
+[1957C](https://codeforces.com/problemset/problem/1957/C)
+[How Does the Rook Move?](https://codeforces.com/problemset/problem/1957/C)
+[combinatorics](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=combinatorics), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1600
+[x12347](https://codeforces.com/problemset/status/1957/problem/C)
+[1875D](https://codeforces.com/problemset/problem/1875/D)
+[Jellyfish and Mex](https://codeforces.com/problemset/problem/1875/D)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp)
+1600
+[x11943](https://codeforces.com/problemset/status/1875/problem/D)
+[1469C](https://codeforces.com/problemset/problem/1469/C)
+[Building a Fence](https://codeforces.com/problemset/problem/1469/C)
+[dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [implementation](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=implementation), [two pointers](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=two+pointers)
+1600
+[x11854](https://codeforces.com/problemset/status/1469/problem/C)
+[2167G](https://codeforces.com/problemset/problem/2167/G)
+[Mukhammadali and the Smooth Array](https://codeforces.com/problemset/problem/2167/G)
+[data structures](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=data+structures), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp)
+1600
+[x11850](https://codeforces.com/problemset/status/2167/problem/G)
+[2070D](https://codeforces.com/problemset/problem/2070/D)
+[Tree Jumps](https://codeforces.com/problemset/problem/2070/D)
+[dfs and similar](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dfs+and+similar), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [trees](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=trees)
+1600
+[x11835](https://codeforces.com/problemset/status/2070/problem/D)
+[2043C](https://codeforces.com/problemset/problem/2043/C)
+[Sums on Segments](https://codeforces.com/problemset/problem/2043/C)
+[binary search](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=binary+search), [brute force](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=brute+force), [data structures](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=data+structures), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp), [greedy](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=greedy), [math](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=math)
+1600
+[x11703](https://codeforces.com/problemset/status/2043/problem/C)
+[607A](https://codeforces.com/problemset/problem/607/A)
+[Chain Reaction](https://codeforces.com/problemset/problem/607/A)
+[binary search](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=binary+search), [dp](https://codeforces.com/problemset?order=BY_RATING_ASC&tags=dp)
+1600
+[x11242](https://codeforces.com/problemset/status/607/problem/A)

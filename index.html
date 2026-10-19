@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codeforces 1200 Memory Sheet & Infosys SP/DSE AI Intelligence</title>
+  <meta name="description" content="Codeforces 1200 memory sheet with voice agent dry-run narration, algorithmic Infosys SP and DSE likeness index, exam prediction scoring, and discussion notes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+  <!-- App Layout -->
+  <div class="app-layout">
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="nav-left">
+        <div class="brand-logo">
+          <span class="logo-icon">⚡</span>
+          <div class="brand-text">
+            <h1 class="brand-title">CF 1200 <span class="highlight">Memory Sheet</span></h1>
+            <span class="brand-tagline">Voice Coach • Infosys SP/DSE Match Matrix • Solutions</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-center">
+        <!-- Target Progress Bar -->
+        <div class="global-progress-card" id="globalProgressCard" title="Overall Goal: 1200 Problems">
+          <div class="progress-info">
+            <span class="progress-label">Total Goal (1200 CF Problems)</span>
+            <span class="progress-stats"><strong id="statCompletedHeader">0</strong> / <span id="statTargetTotal">1200</span> (<span id="statPercentHeader">0%</span>)</span>
+          </div>
+          <div class="progress-bar-track">
+            <div class="progress-bar-fill" id="headerProgressFill" style="width: 0%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <!-- Infosys Intelligence Hub Button -->
+        <button class="nav-btn btn-infosys" id="openInfosysHubBtn" title="Infosys SP & DSE Past/Trending Questions Archive & Match Matrix">
+          <span class="fire-icon">🔥</span>
+          <span>Infosys Intelligence</span>
+        </button>
+        <button class="nav-btn btn-secondary" id="openBatchImportBtn" title="Import batch of questions (e.g. 100 at a time)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Batch Ingest</span>
+        </button>
+        <button class="nav-btn btn-secondary" id="exportDataBtn" title="Export progress, notes & discussions as JSON">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          <span>Export JSON</span>
+        </button>
+        <button class="nav-btn btn-secondary" id="exportCsvBtn" title="Export Full Infosys Matched DP Spreadsheet (.csv)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          <span>Export CSV</span>
+        </button>
+        <button class="nav-btn btn-icon" id="soundToggleBtn" title="Toggle audio cues on completion" aria-label="Toggle audio cues">
+          <span id="soundIcon">🔊</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Global Floating Voice Agent Controller Bar -->
+    <section class="voice-agent-bar" id="voiceAgentBar">
+      <div class="voice-bar-left">
+        <div class="voice-avatar" id="voiceAvatar">
+          <span class="bot-icon">🎙️</span>
+          <div class="voice-soundwaves" id="voiceSoundwaves">
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+          </div>
+        </div>
+        <div class="voice-status-info">
+          <div class="voice-title-row">
+            <span class="voice-label">AI Voice Coach</span>
+            <span class="voice-active-section" id="voiceActiveSection">Ready for narration</span>
+          </div>
+          <div class="voice-current-problem" id="voiceCurrentProblem">Select any problem or click "Listen" below</div>
+        </div>
+      </div>
+
+      <div class="voice-bar-center">
+        <!-- Voice Quick Controls -->
+        <button class="voice-action-btn" id="voicePlayPauseBtn" title="Play / Pause narration">
+          <span id="voicePlayIcon">▶</span>
+          <span id="voicePlayText">Listen</span>
+        </button>
+        <button class="voice-action-btn secondary" id="voiceStopBtn" title="Stop narration">
+          <span>⏹</span>
+          <span>Stop</span>
+        </button>
+        <div class="voice-section-quick-jumps">
+          <button class="jump-pill" data-voice-jump="summary" title="Read problem statement and summary">Summary</button>
+          <button class="jump-pill" data-voice-jump="io" title="Read input and output format">I/O</button>
+          <button class="jump-pill highlight" data-voice-jump="dryrun" title="Step-by-step dry run simulation">Dry Run</button>
+          <button class="jump-pill" data-voice-jump="intuition" title="Core intuition & complexity">Intuition</button>
+        </div>
+      </div>
+
+      <div class="voice-bar-right">
+        <div class="rate-control-group">
+          <label for="voiceRateSelect">Speed:</label>
+          <select id="voiceRateSelect" class="voice-select">
+            <option value="0.8">0.8x</option>
+            <option value="1.0" selected>1.0x</option>
+            <option value="1.25">1.25x</option>
+            <option value="1.5">1.5x</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Dashboard Statistics Strip -->
+      <section class="stats-overview" id="statsOverview">
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Loaded Questions</span>
+            <span class="stat-badge blue" id="loadedFractionBadge">0 / 1200</span>
+          </div>
+          <div class="stat-value" id="statLoadedCount">0</div>
+          <div class="stat-subtext">Ready for your 1200 questions list</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Completed / Solved</span>
+            <span class="stat-badge green" id="statCompletedBadge">0%</span>
+          </div>
+          <div class="stat-value text-green" id="statCompletedCount">0</div>
+          <div class="stat-subtext"><span id="statRemainingCount">1200</span> remaining to hit milestone</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Infosys Match Index</span>
+            <span class="stat-badge orange" id="statInfosysMatchBadge">AI Calibrated</span>
+          </div>
+          <div class="stat-value text-orange" id="statInfosysHighMatchCount">0</div>
+          <div class="stat-subtext">Problems with >= 75% SP/DSE Likeness</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Active Topics</span>
+            <span class="stat-badge purple" id="statTopicCountBadge">0 Topics</span>
+          </div>
+          <div class="stat-value text-purple" id="statTopicsActive">0</div>
+          <div class="stat-subtext">Click any topic tag below to filter</div>
+        </div>
+      </section>
+
+      <!-- Rating Bands Distribution -->
+      <section class="rating-strip-container">
+        <div class="rating-strip-header">
+          <span class="strip-title">Codeforces Rating Distribution</span>
+          <span class="strip-tip">Click a rating band to filter questions</span>
+        </div>
+        <div class="rating-distribution-bar" id="ratingDistributionBar">
+          <!-- Filled dynamically by JS -->
+        </div>
+      </section>
+
+      <!-- Topic Filter Pills Carousel/Container -->
+      <section class="topic-filter-section">
+        <div class="topic-filter-header">
+          <span class="section-subtitle">Filter by Topic:</span>
+          <button class="clear-filters-link" id="clearAllFiltersBtn" style="display: none;">Reset Filters</button>
+        </div>
+        <div class="topic-chips-wrapper" id="topicChipsContainer">
+          <!-- Populated dynamically -->
+        </div>
+      </section>
+
+      <!-- Controls & Filter Toolbar -->
+      <section class="toolbar-section">
+        <!-- Search Bar -->
+        <div class="search-box-wrapper">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="globalSearchInput" placeholder="Search by Problem Name, ID (e.g. 1800E2), Topic, Intuition or Infosys pattern..." autocomplete="off">
+          <button class="clear-search-btn" id="clearSearchBtn" title="Clear search" style="display: none;">&times;</button>
+        </div>
+
+        <!-- Filter Selectors -->
+        <div class="filter-controls-group">
+          <!-- Infosys Exam Filter -->
+          <div class="custom-select-wrapper">
+            <select id="infosysFilterSelect" class="toolbar-select highlight-select">
+              <option value="all">Infosys: All Questions</option>
+              <option value="sp-high">🔥 High Infosys SP Match (>=75%)</option>
+              <option value="dse-high">⚡ High Infosys DSE Match (>=75%)</option>
+              <option value="any-high">🎯 Any Infosys Match (>=60%)</option>
+              <option value="hot-pred">🚀 Hot Prediction (>=80%)</option>
+            </select>
+          </div>
+
+          <!-- Status Filter -->
+          <div class="custom-select-wrapper">
+            <select id="statusFilterSelect" class="toolbar-select">
+              <option value="all">Status: All Problems</option>
+              <option value="completed">Status: Completed Only (✓)</option>
+              <option value="incomplete">Status: Incomplete Only</option>
+              <option value="starred">Status: Starred / Revision Only (★)</option>
+            </select>
+          </div>
+
+          <!-- Rating Filter -->
+          <div class="custom-select-wrapper">
+            <select id="ratingFilterSelect" class="toolbar-select">
+              <option value="all">Rating: All Ratings</option>
+              <option value="800-1100">800 - 1100 (Newbie / Pupil)</option>
+              <option value="1200-1400">1200 - 1400 (Pupil / Specialist)</option>
+              <option value="1500-1700">1500 - 1700 (Specialist / Expert)</option>
+              <option value="1800-2000">1800 - 2000 (Candidate Master)</option>
+              <option value="2100+">2100+ (Master / GM)</option>
+            </select>
+          </div>
+
+          <!-- Sort Filter -->
+          <div class="custom-select-wrapper">
+            <select id="sortSelect" class="toolbar-select">
+              <option value="default">Sort: Default Index</option>
+              <option value="likeness-desc">Infosys Match: High to Low</option>
+              <option value="pred-desc">Prediction Index: Hot to Low</option>
+              <option value="rating-asc">Rating: Low to High</option>
+              <option value="rating-desc">Rating: High to Low</option>
+              <option value="name-asc">Name: A to Z</option>
+            </select>
+          </div>
+
+          <!-- View Mode Toggles -->
+          <div class="view-mode-toggle-group">
+            <button class="view-btn active" id="viewModeSheet" title="Memory Sheet Table View (Rapid Revision)">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+              <span>Sheet</span>
+            </button>
+            <button class="view-btn" id="viewModeCards" title="Study Card Grid View">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              <span>Cards</span>
+            </button>
+            <button class="view-btn" id="viewModeFlashcard" title="Active Recall Flashcard Mode">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              <span>Recall</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Questions Container -->
+      <section class="questions-section">
+        <!-- Results Info Bar -->
+        <div class="results-header">
+          <div class="results-count">
+            Showing <strong id="visibleCount">0</strong> of <span id="totalFilterCount">0</span> questions
+            <span id="activeFilterDesc" class="filter-desc-tag"></span>
+          </div>
+
+          <div class="table-actions">
+            <button class="quick-link-btn" id="expandAllIntuitionsBtn">
+              <span id="expandAllText">Show All Intuitions</span>
+            </button>
+            <div class="page-size-selector">
+              <label for="pageSizeSelect">Per page:</label>
+              <select id="pageSizeSelect">
+                <option value="25">25</option>
+                <option value="50" selected>50</option>
+                <option value="100">100</option>
+                <option value="1200">All</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Render Target Container -->
+        <div id="questionsContainer" class="questions-view-sheet">
+          <!-- Filled dynamically by JavaScript -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state-card" id="emptyState" style="display: none;">
+          <div class="empty-icon">🔍</div>
+          <h3>No matching questions found</h3>
+          <p>Try clearing your search or Infosys filters. You can also import questions using "Batch Ingest".</p>
+          <button class="btn-primary" id="resetFiltersEmptyBtn">Reset All Filters</button>
+        </div>
+
+        <!-- Pagination Bar -->
+        <div class="pagination-bar" id="paginationBar">
+          <button class="page-btn" id="prevPageBtn">&larr; Previous</button>
+          <div class="page-numbers" id="pageNumbers"></div>
+          <button class="page-btn" id="nextPageBtn">Next &rarr;</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="footer-content">
+        <p>Codeforces 1200 Memory Sheet & Infosys SP/DSE Pattern Matcher • Powered by AI Likeness & Prediction Algorithms.</p>
+        <p class="footer-sub">Voice Agent features Web Speech API • Telegram, LeetCode, Reddit & YouTube Coding DB Synced.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Deep Dive Problem Detail Modal -->
+  <div class="modal-overlay" id="problemModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="modal-badges">
+            <span class="badge-cf-id" id="modalProblemId">4A</span>
+            <span class="badge-cf-rating" id="modalRatingBadge">800</span>
+            <span class="status-pill" id="modalStatusBadge">Incomplete</span>
+            <span class="badge-infosys-match" id="modalInfosysBadge">🔥 SP Match: 95%</span>
+          </div>
+          <h2 class="modal-problem-title" id="modalProblemTitle">Watermelon</h2>
+          <div class="modal-topics" id="modalTopicsList"></div>
+        </div>
+        <div class="modal-actions-top">
+          <button class="btn-icon modal-star-btn" id="modalStarBtn" title="Toggle Star / Revision flag">★</button>
+          <button class="btn-icon modal-close-btn" id="closeProblemModalBtn" title="Close modal">&times;</button>
+        </div>
+      </div>
+
+      <!-- Modal Tabs -->
+      <div class="modal-tabs-nav">
+        <button class="modal-tab-btn active" data-tab="tabIntuition">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <span>Summary, Intuition & Dry Run</span>
+        </button>
+        <button class="modal-tab-btn" data-tab="tabInfosys">
+          <span style="font-size: 0.95rem;">🔥</span>
+          <span>Infosys SP & DSE Match Intelligence</span>
+        </button>
+        <button class="modal-tab-btn" data-tab="tabSolution">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          <span>Solution & Code</span>
+        </button>
+        <button class="modal-tab-btn" data-tab="tabDiscussion">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <span>Discussion & Notes (<span id="modalDiscussionCount">0</span>)</span>
+        </button>
+      </div>
+
+      <!-- Tab Contents -->
+      <div class="modal-body">
+        <!-- Tab 1: Summary, I/O, Dry Run & Voice Coach -->
+        <div class="modal-tab-pane active" id="tabIntuition">
+          <!-- Voice Player Control Card -->
+          <div class="voice-detail-controller">
+            <div class="voice-detail-header">
+              <div class="voice-detail-title">
+                <span class="bot-icon">🎙️</span>
+                <strong>AI Voice Audio Coach</strong>
+              </div>
+              <span class="voice-badge">Web Speech Synthesizer</span>
+            </div>
+            <p class="voice-detail-desc">Listen to conversational narration of the problem statement, sample input/output, and the step-by-step dry run simulation.</p>
+            <div class="voice-detail-buttons">
+              <button class="btn-voice-trigger primary" id="modalListenFullBtn">
+                <span>▶</span> Read Full Audio Lesson
+              </button>
+              <button class="btn-voice-trigger" id="modalListenSummaryBtn">
+                <span>📋</span> Read Summary
+              </button>
+              <button class="btn-voice-trigger" id="modalListenIoBtn">
+                <span>🧪</span> Read Input/Output
+              </button>
+              <button class="btn-voice-trigger highlight" id="modalListenDryRunBtn">
+                <span>🏃</span> Read Step-by-Step Dry Run
+              </button>
+              <button class="btn-voice-trigger" id="modalListenIntuitionBtn">
+                <span>💡</span> Read Intuition
+              </button>
+              <button class="btn-voice-trigger stop" id="modalVoiceStopBtn">
+                <span>⏹</span> Stop
+              </button>
+            </div>
+          </div>
+
+          <!-- Problem Short Description -->
+          <div class="detail-card">
+            <h4 class="detail-section-title">
+              <span class="icon">📋</span> Short Description
+            </h4>
+            <p class="detail-text" id="modalShortDesc"></p>
+          </div>
+
+          <!-- Input & Output Specification -->
+          <div class="detail-card io-card">
+            <h4 class="detail-section-title">
+              <span class="icon">🧪</span> Input & Output Specifications
+            </h4>
+            <div class="io-grid">
+              <div class="io-block">
+                <span class="io-title">Input Format:</span>
+                <p id="modalInputFormat" class="io-text"></p>
+                <div class="sample-box">
+                  <span class="sample-label">Sample Input:</span>
+                  <pre><code id="modalSampleInput"></code></pre>
+                </div>
+              </div>
+              <div class="io-block">
+                <span class="io-title">Output Format:</span>
+                <p id="modalOutputFormat" class="io-text"></p>
+                <div class="sample-box">
+                  <span class="sample-label">Sample Output:</span>
+                  <pre><code id="modalSampleOutput"></code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step-by-Step Dry Run Simulation -->
+          <div class="detail-card dryrun-box">
+            <h4 class="detail-section-title">
+              <span class="icon">🏃</span> Step-by-Step Dry Run Simulation
+            </h4>
+            <p class="detail-text-highlight" id="modalDryRunText"></p>
+          </div>
+
+          <!-- Core Intuition / Aha! Moment -->
+          <div class="detail-card intuition-box">
+            <h4 class="detail-section-title">
+              <span class="icon">💡</span> Core Intuition / "Aha!" Moment
+            </h4>
+            <p class="detail-text-highlight" id="modalIntuition"></p>
+          </div>
+
+          <div class="complexity-strip">
+            <div class="complexity-item">
+              <span class="label">Time Complexity:</span>
+              <code id="modalTimeComplexity" class="code-badge">O(1)</code>
+            </div>
+            <div class="complexity-item">
+              <span class="label">Space Complexity:</span>
+              <code id="modalSpaceComplexity" class="code-badge">O(1)</code>
+            </div>
+            <div class="complexity-item">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="cf-external-link" id="modalExternalLink">
+                <span>View on Codeforces</span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Infosys SP & DSE Match Intelligence -->
+        <div class="modal-tab-pane" id="tabInfosys">
+          <div class="infosys-intel-card">
+            <div class="intel-header-row">
+              <div class="intel-badge-group">
+                <span class="intel-tag role" id="modalIntelRole">Target: Infosys SP & DSE</span>
+                <span class="intel-tag pred" id="modalIntelPred">Hot Prediction 🔥</span>
+              </div>
+              <div class="intel-scores-row">
+                <div class="score-pill">
+                  <span class="label">Likeness Index:</span>
+                  <strong id="modalIntelLikeness">95%</strong>
+                </div>
+                <div class="score-pill">
+                  <span class="label">Exam Prediction Index:</span>
+                  <strong id="modalIntelPredScore">92%</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Likeness Meter Track -->
+            <div class="likeness-meter-track">
+              <div class="likeness-meter-fill" id="modalLikenessFill" style="width: 85%;"></div>
+            </div>
+
+            <div class="intel-body-box">
+              <h4 class="intel-subtitle">🎯 Closest Infosys Coding Question in Database:</h4>
+              <div class="closest-inf-problem-card">
+                <div class="inf-prob-header">
+                  <h3 id="modalInfMatchTitle">Distance Swapping Permutations (Distance K or K+1)</h3>
+                  <span class="inf-source-badge" id="modalInfMatchSource">Telegram Coding Group / LeetCode Discuss</span>
+                </div>
+                <p class="inf-statement" id="modalInfMatchStatement"></p>
+                <div class="inf-pattern-box">
+                  <strong>Key Pattern / Core Concept:</strong>
+                  <p id="modalInfMatchPattern"></p>
+                </div>
+                <div class="inf-comparison-notes">
+                  <strong>Why this matches:</strong>
+                  <p id="modalInfMatchReason"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Solution & Code Snippet -->
+        <div class="modal-tab-pane" id="tabSolution">
+          <div class="detail-card">
+            <h4 class="detail-section-title">
+              <span class="icon">⚙️</span> Step-by-Step Algorithm
+            </h4>
+            <div class="algorithm-steps" id="modalSolutionSteps"></div>
+          </div>
+
+          <div class="code-block-wrapper">
+            <div class="code-header">
+              <div class="code-lang-tabs">
+                <button class="code-tab-btn active" data-lang="cpp">C++</button>
+                <button class="code-tab-btn" data-lang="python">Python</button>
+              </div>
+              <button class="copy-code-btn" id="copyCodeBtn" title="Copy code to clipboard">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <span>Copy Code</span>
+              </button>
+            </div>
+            <pre class="code-viewport"><code id="modalCodeSnippet" class="language-cpp"></code></pre>
+          </div>
+        </div>
+
+        <!-- Tab 4: Discussion & Personal Notes -->
+        <div class="modal-tab-pane" id="tabDiscussion">
+          <div class="personal-notes-box">
+            <div class="notes-header">
+              <h4 class="detail-section-title">
+                <span class="icon">📝</span> My Personal Notes & Mistakes
+              </h4>
+              <span class="notes-autosave-indicator" id="notesSaveIndicator">Auto-saved</span>
+            </div>
+            <p class="notes-subtitle">Jot down edge cases you missed, implementation bugs, or personal tips for this problem.</p>
+            <textarea id="modalPersonalNotesInput" class="personal-notes-textarea" placeholder="e.g. Remember to check if n is odd, beware of 0-indexing, used binary search on answer..."></textarea>
+          </div>
+
+          <div class="discussion-container">
+            <h4 class="detail-section-title">
+              <span class="icon">💬</span> Question Discussion & Community Insights
+            </h4>
+            <div class="comments-list" id="modalCommentsList"></div>
+            <form class="add-comment-form" id="addCommentForm">
+              <div class="comment-inputs-row">
+                <input type="text" id="commentAuthorInput" placeholder="Your Handle / Name" value="Me" required>
+              </div>
+              <textarea id="commentTextInput" class="comment-textarea" placeholder="Share an observation, alternate solution, or question about this problem..." required></textarea>
+              <button type="submit" class="btn-primary comment-submit-btn">
+                <span>Post Comment</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button class="btn-completion-toggle" id="modalToggleCompleteBtn">
+          <span class="check-icon">✓</span>
+          <span id="modalToggleCompleteText">Mark as Completed</span>
+        </button>
+        <button class="btn-secondary" id="modalCloseFooterBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Infosys Intelligence Hub Modal (Database Explorer) -->
+  <div class="modal-overlay" id="infosysHubModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h2>🔥 Infosys SP & DSE Coding Questions Archive</h2>
+          <p class="modal-subtitle">Curated database of actual coding questions asked in Infosys SP (Specialist Programmer ₹9.5 LPA) and DSE (₹6.5 LPA) drives collected from Telegram, LeetCode, Reddit, and YouTube (2022-2026).</p>
+        </div>
+        <button class="btn-icon modal-close-btn" id="closeInfosysHubBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="hub-search-bar">
+          <input type="text" id="hubSearchInput" placeholder="Search Infosys database by title, keyword, or exam type...">
+        </div>
+        <div class="hub-items-list" id="hubItemsList">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" id="closeInfosysHubFooterBtn">Close Hub</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Batch Import 100 Questions Modal -->
+  <div class="modal-overlay" id="batchImportModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h2>📥 Batch Question Ingestion (Ready for 100+ Questions)</h2>
+          <p class="modal-subtitle">Paste your next batch of Codeforces questions in JSON or structured format. The system will parse and index them instantly!</p>
+        </div>
+        <button class="btn-icon modal-close-btn" id="closeBatchImportModalBtn">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="format-help-box">
+          <div class="format-help-header">
+            <strong>Expected JSON Array Format:</strong>
+            <button class="copy-format-btn" id="copyFormatTemplateBtn">Copy Template</button>
+          </div>
+          <pre class="format-code-preview"><code>[
+  {
+    "id": "1800E2",
+    "name": "Unforgivable Curse (hard)",
+    "rating": 1400,
+    "topics": ["graphs", "greedy"],
+    "shortDescription": "Swap chars at distance k or k+1. Determine if s becomes t.",
+    "sampleInput": "1\\n6 3\\ntalant\\natlant",
+    "sampleOutput": "YES",
+    "dryRun": "Indices that reach each other in steps of k and k+1 form connected components...",
+    "intuition": "Characters can freely permute in connected components if multiset matches.",
+    "solution": "Check immutable positions first, then test if multiset matches.",
+    "timeComplexity": "O(n)",
+    "spaceComplexity": "O(1)",
+    "link": "https://codeforces.com/problemset/problem/1800/E2"
+  }
+]</code></pre>
+        </div>
+
+        <div class="import-textarea-group">
+          <label for="batchJsonInput">Paste Questions Data (JSON array or objects):</label>
+          <textarea id="batchJsonInput" class="batch-textarea" placeholder='[ { "id": "...", "name": "...", ... } ]'></textarea>
+          <div class="import-feedback-msg" id="importFeedbackMsg"></div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="import-mode-select">
+          <label><input type="radio" name="importMode" value="merge" checked> Merge (Add to existing questions)</label>
+          <label><input type="radio" name="importMode" value="replace"> Replace All</label>
+        </div>
+        <div class="modal-actions-right">
+          <button class="btn-secondary" id="cancelImportBtn">Cancel</button>
+          <button class="btn-primary" id="processImportBtn">Import & Save Questions</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confettiCanvas" class="confetti-canvas"></canvas>
+
+  <!-- Load Scripts in Proper Dependency Order -->
+  <script src="infosys-db.js"></script>
+  <script src="matcher.js"></script>
+  <script src="voice-agent.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

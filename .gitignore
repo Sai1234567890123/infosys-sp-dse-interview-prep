@@ -1,0 +1,13 @@
+# Temporary raster/image files from OCR extraction
+*.png
+*.jpg
+*.jpeg
+extracted_images/
+tmp_*
+test_*.png
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
