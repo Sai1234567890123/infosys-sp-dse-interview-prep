@@ -1,0 +1,100 @@
+1334C	Circle of Monsters	brute force, constructive algorithms, greedy, math	1600	18350
+1373D	Maximum Sum on Even Positions	divide and conquer, dp, greedy, implementation	1600	18287
+1537E1	Erase and Extend (Easy Version)	binary search, brute force, dp, greedy, hashing, implementation, string suffix structures, strings, two pointers	1600	17355
+1610C	Keshi Is Throwing a Party	binary search, greedy	1600	16989
+1396A	Multiples of Length	constructive algorithms, greedy, number theory	1600	16967
+2129B	Stay or Mirror	brute force, data structures, dp, greedy, sortings	1600	16293
+372A	Counting Kangaroos is Fun	binary search, greedy, sortings, two pointers	1600	16187
+1622C	Set or Decrease	binary search, brute force, greedy, sortings	1600	16131
+1707A	Doremy's IQ	binary search, constructive algorithms, greedy, implementation	1600	15839
+1348C	Phoenix and Distribution	constructive algorithms, greedy, sortings, strings	1600	15737
+2063C	Remove Exactly Two	brute force, data structures, dfs and similar, dp, graphs, greedy, sortings, trees	1600	15585
+1395C	Boboniu and Bit Operations	bitmasks, brute force, dp, greedy	1600	15552
+1956C	Nene's Magical Matrix	constructive algorithms, greedy, math	1600	15528
+1593E	Gardener and Tree	brute force, data structures, dfs and similar, greedy, implementation, trees	1600	15457
+1798D	Shocking Arrangement	constructive algorithms, greedy, math	1600	15343
+1374E1	Reading Books (easy version)	data structures, greedy, sortings	1600	15266
+1503A	Balance the Bits	constructive algorithms, greedy	1600	15103
+1779C	Least Prefix Sum	data structures, greedy	1600	15026
+1251C	Minimize The Integer	greedy, two pointers	1600	14891
+1623C	Balanced Stone Heaps	binary search, greedy	1600	14835
+1437D	Minimal Height Tree	graphs, greedy, shortest paths, trees	1600	14757
+1364C	Ehab and Prefix MEXs	brute force, constructive algorithms, greedy	1600	14657
+1946C	Tree Cutting	binary search, dp, greedy, implementation, trees	1600	14482
+2085C	Serval and The Formula	bitmasks, constructive algorithms, dp, greedy	1600	14283
+1295C	Obtain The String	dp, greedy, strings	1600	14146
+1978D	Elections	data structures, greedy, implementation, math	1600	14041
+1371D	Grid-00100	constructive algorithms, greedy, implementation	1600	13815
+2004D	Colored Portals	binary search, brute force, data structures, graphs, greedy, implementation, shortest paths	1600	13716
+1980E	Permutation of Rows and Columns	constructive algorithms, data structures, greedy, hashing, implementation, math, matrices, sortings	1600	13496
+1748C	Zero-Sum Prefixes	brute force, data structures, dp, greedy, implementation	1600	13461
+1455D	Sequence and Swaps	dp, greedy, sortings	1600	13433
+1703G	Good Key, Bad Key	bitmasks, brute force, dp, greedy, math	1600	13216
+2128D	Sum of LDS	brute force, combinatorics, dp, greedy, math	1600	13196
+1303C	Perfect Keyboard	dfs and similar, greedy, implementation	1600	13169
+1862E	Kolya and Movie Theatre	constructive algorithms, data structures, greedy	1600	13146
+2059C	Customer Service	brute force, constructive algorithms, graph matchings, greedy, math, sortings	1600	13030
+2018A	Cards Partition	2-sat, brute force, greedy, implementation, math	1600	12994
+1539D	PriceFixed	binary search, greedy, implementation, sortings, two pointers	1600	12994
+1294D	MEX maximizing	data structures, greedy, implementation, math	1600	12923
+1976C	Job Interview	binary search, dp, greedy, implementation, two pointers	1600	12819
+1917C	Watering an Array	brute force, greedy, implementation, math	1600	12749
+1822E	Making Anti-Palindromes	greedy, math, strings	1600	12721
+1511D	Min Cost String	brute force, constructive algorithms, graphs, greedy, strings	1600	12668
+2065E	Skibidus and Rizz	constructive algorithms, greedy, strings	1600	12620
+2117E	Lost Soul	brute force, greedy	1600	12564
+1481C	Fence Painting	brute force, constructive algorithms, greedy	1600	12561
+2051E	Best Price	binary search, brute force, data structures, greedy, sortings	1600	12553
+1476C	Longest Simple Cycle	dp, graphs, greedy	1600	12465
+1771C	Hossam and Trainees	greedy, math, number theory	1600	12122
+1217B	Zmei Gorynich	greedy, math	1600	11950
+1469C	Building a Fence	dp, greedy, implementation, two pointers	1600	11861
+1921E	Eat the Chip	brute force, games, greedy, math	1600	11741
+2043C	Sums on Segments	binary search, brute force, data structures, dp, greedy, math	1600	11706
+1687A	The Enchanted Forest	brute force, greedy	1600	11620
+1512E	Permutation by Sum	brute force, greedy, math	1600	11603
+2046B	Move Back at a Cost	binary search, data structures, greedy, sortings	1600	11459
+1680C	Binary String	binary search, greedy, strings, two pointers	1600	11428
+1781C	Equal Frequencies	brute force, constructive algorithms, greedy, implementation, sortings, strings	1600	11403
+2040C	Ordered Permutations	bitmasks, combinatorics, constructive algorithms, greedy, math, two pointers	1600	11247
+1282B2	K for the Price of One (Hard Version)	dp, greedy, sortings	1600	11221
+2155C	The Ancient Wizards' Capes	brute force, greedy, implementation	1600	11194
+2103C	Median Splits	binary search, greedy, implementation, sortings	1600	11181
+681C	Heap Operations	constructive algorithms, data structures, greedy	1600	10912
+1036D	Vasya and Arrays	greedy, two pointers	1600	10895
+1321C	Remove Adjacent	brute force, constructive algorithms, greedy, strings	1600	10659
+1165E	Two Arrays and Sum of Functions	greedy, math, sortings	1600	10653
+1714D	Color with Occurrences	brute force, data structures, dp, greedy, strings	1600	10582
+2028C	Alice's Adventures in Cutting Cake	binary search, dp, greedy, two pointers	1600	10467
+1041C	Coffee Break	binary search, data structures, greedy, two pointers	1600	10433
+1878D	Reverse Madness	data structures, greedy	1600	10377
+780C	Andryusha and Colored Balloons	dfs and similar, graphs, greedy, trees	1600	10360
+1530D	Secret Santa	constructive algorithms, flows, graphs, greedy, math	1600	10320
+1665C	Tree Infection	binary search, greedy, sortings, trees	1600	10134
+1482C	Basic Diplomacy	brute force, constructive algorithms, greedy, implementation	1600	10131
+2162E	Beautiful Palindromes	constructive algorithms, greedy, schedules	1600	10083
+1223C	Save the Nature	binary search, greedy	1600	10025
+2036E	Reverse the Rivers	binary search, constructive algorithms, data structures, greedy	1600	9974
+2167E	khba Loves to Sleep!	binary search, data structures, geometry, greedy, implementation	1600	9942
+2193F	Pizza Delivery	dp, greedy	1600	9883
+1899F	Alex's whims	constructive algorithms, graphs, greedy, shortest paths, trees	1600	9841
+500B	New Year Permutation	dfs and similar, dsu, graphs, greedy, math, sortings	1600	9813
+2182D	Christmas Tree Decoration	combinatorics, dp, greedy, math	1600	9785
+1098A	Sum in the tree	constructive algorithms, dfs and similar, greedy, trees	1600	9771
+1203D1	Remove the Substring (easy version)	greedy, implementation	1600	9671
+1774D	Same Count One	brute force, constructive algorithms, greedy, implementation, two pointers	1600	9543
+1615C	Menorah	brute force, graphs, greedy, math	1600	9388
+1151D	Stas and the Queue at the Buffet	greedy, math, sortings	1600	9303
+2084D	Arcology On Permafrost	binary search, brute force, constructive algorithms, greedy, math	1600	9279
+1523C	Compression and Expansion	brute force, data structures, greedy, implementation, trees	1600	9243
+2232C2	Seating Arrangement (Hard Version)	binary search, greedy, math, two pointers	1600	9219
+1797C	Li Hua and Chess	constructive algorithms, greedy, interactive	1600	9176
+1015D	Walking Between Houses	constructive algorithms, greedy	1600	9126
+2194D	Table Cut	constructive algorithms, greedy, implementation	1600	9073
+1904D1	Set To Max (Easy Version)	brute force, constructive algorithms, greedy	1600	8957
+1025B	Weakened Common Divisor	brute force, greedy, number theory	1600	8887
+416C	Booking System	binary search, dp, greedy, implementation	1600	8877
+986A	Fair	graphs, greedy, number theory, shortest paths	1600	8826
+2082B	Floor or Ceil	brute force, greedy	1600	8795
+1281B	Azamon Web Services	greedy	1600	8775
+1609D	Social Network	dsu, graphs, greedy, implementation, trees	1600	8773

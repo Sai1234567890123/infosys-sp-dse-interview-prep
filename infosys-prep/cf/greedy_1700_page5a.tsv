@@ -1,0 +1,100 @@
+778A	String Game	binary search, greedy, strings	1700	13286
+1628B	Peculiar Movie Preferences	greedy, strings	1700	12930
+486C	Palindrome Transformation	brute force, greedy, implementation	1700	12521
+1700C	Helping the Nature	constructive algorithms, data structures, greedy	1700	12430
+1336B	Xenia and Colorful Gems	binary search, greedy, math, sortings, two pointers	1700	12394
+1893B	Neutral Tonality	constructive algorithms, greedy, sortings, two pointers	1700	12118
+1626C	Monsters And Spells	binary search, data structures, dp, greedy, implementation, math, two pointers	1700	12095
+1983D	Swap Dilemma	constructive algorithms, data structures, divide and conquer, greedy, math, sortings	1700	11878
+1400B	RPG Protagonist	brute force, greedy, math	1700	11810
+1950F	0, 1, 2, Tree!	bitmasks, brute force, greedy, implementation, trees	1700	11637
+1383A	String Transformation 1	dsu, graphs, greedy, sortings, strings, trees, two pointers	1700	11456
+1986E	Beautiful Array	greedy, math, number theory, sortings	1700	11256
+1783C	Yet Another Tournament	binary search, greedy, sortings	1700	11184
+1393C	Pinkie Pie Eats Patty-cakes	constructive algorithms, greedy, math, sortings	1700	11141
+1550C	Manhattan Subarrays	brute force, geometry, greedy, implementation	1700	11007
+1955E	Long Inversions	brute force, greedy, implementation, sortings	1700	10957
+1684D	Traps	constructive algorithms, greedy, sortings	1700	10955
+1661C	Water the Trees	binary search, greedy, math	1700	10932
+1709D	Rorororobot	binary search, data structures, greedy, math	1700	10865
+2122C	Manhattan Pairs	constructive algorithms, geometry, greedy, math, sortings	1700	10760
+1253D	Harmonious Graph	constructive algorithms, dfs and similar, dsu, graphs, greedy, sortings	1700	10742
+1849D	Array Painting	constructive algorithms, greedy, two pointers	1700	10631
+2018C	Tree Pruning	brute force, dfs and similar, greedy, sortings, trees	1700	10593
+1619E	MEX and Increments	constructive algorithms, data structures, dp, greedy, implementation, math, sortings	1700	10448
+797C	Minimal string	data structures, greedy, strings	1700	10403
+1995B2	Bouquet (Hard Version)	binary search, data structures, greedy, math, sortings, two pointers	1700	10399
+1850H	The Third Letter	dfs and similar, dsu, graphs, greedy, implementation	1700	10389
+2031D	Penchick and Desert Rabbit	binary search, data structures, dfs and similar, dp, dsu, greedy, implementation, two pointers	1700	10312
+1692H	Gambling	data structures, dp, greedy, math	1700	10265
+1883E	Look Back	bitmasks, greedy	1700	10260
+2124D	Make a Palindrome	greedy, sortings, two pointers	1700	10169
+2006A	Iris and Game on the Tree	constructive algorithms, dfs and similar, games, graphs, greedy, trees	1700	10094
+1392D	Omkar and Bed Wars	dp, greedy	1700	10084
+2071C	Trapmigiano Reggiano	constructive algorithms, data structures, dfs and similar, dp, greedy, sortings, trees	1700	10082
+1973C	Cat, Fox and Double Maximum	constructive algorithms, greedy, implementation, math, sortings	1700	10069
+1945E	Binary Search	binary search, constructive algorithms, greedy	1700	10036
+1301C	Ayoub's function	binary search, combinatorics, greedy, math, strings	1700	10011
+1693B	Fake Plastic Trees	dfs and similar, dp, greedy, trees	1700	9835
+2163B	Siga ta Kymata	constructive algorithms, greedy, implementation, math	1700	9753
+1702F	Equate Multisets	constructive algorithms, data structures, greedy, math, number theory	1700	9705
+1798C	Candy Store	greedy, math, number theory	1700	9647
+1157C2	Increasing Subsequence (hard version)	greedy	1700	9536
+1430D	String Deletion	binary search, data structures, greedy, two pointers	1700	9485
+1157E	Minimum Array	binary search, data structures, greedy	1700	9432
+2147D	Game on Array	games, greedy	1700	9345
+1497E1	Square-Free Division (easy version)	data structures, dp, greedy, math, number theory, two pointers	1700	9261
+1779D	Boris and His Amazing Haircut	constructive algorithms, data structures, dp, dsu, greedy, sortings	1700	9226
+1268A	Long Beautiful Integer	constructive algorithms, greedy, implementation, strings	1700	9223
+2152D	Division Versus Addition	games, greedy, math	1700	9122
+2110D	Fewer Batteries	binary search, dfs and similar, dp, graphs, greedy, hashing	1700	9020
+1260C	Infinite Fence	greedy, math, number theory	1700	8978
+1984C2	Magnitude (Hard Version)	combinatorics, dp, greedy, math	1700	8957
+1361A	Johnny and Contribution	constructive algorithms, graphs, greedy, sortings	1700	8920
+1901D	Yet Another Monster Fight	binary search, dp, greedy, implementation, math	1700	8890
+1688C	Manipulating History	constructive algorithms, greedy, strings	1700	8890
+339C	Xenia and Weights	constructive algorithms, dfs and similar, dp, graphs, greedy, shortest paths	1700	8861
+1278C	Berry Jam	data structures, dp, greedy, implementation	1700	8854
+1936A	Bitwise Operation Wizard	bitmasks, constructive algorithms, greedy, interactive, math	1700	8838
+1889B	Doremy's Connecting Plan	constructive algorithms, greedy, math, sortings	1700	8810
+2132E	Arithmetics Competition	binary search, data structures, greedy, sortings, ternary search	1700	8712
+1611E1	Escape The Maze (easy version)	dfs and similar, greedy, shortest paths, trees, two pointers	1700	8635
+739A	Alyona and mex	constructive algorithms, greedy	1700	8569
+1743D	Problem with Random Tests	brute force, dp, greedy, probabilities	1700	8563
+1868B1	Candy Party (Easy Version)	bitmasks, constructive algorithms, graphs, greedy, implementation, math	1700	8515
+1491C	Pekora and Trampoline	brute force, data structures, dp, greedy, implementation	1700	8512
+2104E	Unpleasant Strings	binary search, dp, greedy, strings	1700	8506
+1203D2	Remove the Substring (hard version)	binary search, greedy, implementation, two pointers	1700	8482
+582A	GCD Table	constructive algorithms, greedy, number theory	1700	8465
+2113C	Smilo and Minecraft	brute force, constructive algorithms, greedy	1700	8407
+1340B	Nastya and Scoreboard	bitmasks, dp, graphs, greedy	1700	8384
+1257D	Yet Another Monster Killing Problem	binary search, data structures, dp, greedy, sortings, two pointers	1700	8381
+1934C	Find a Mine	binary search, constructive algorithms, geometry, greedy, interactive, math	1700	8340
+1930C	Lexicographically Largest	binary search, constructive algorithms, data structures, greedy, sortings	1700	8339
+1185C2	Exam in BerSU (hard version)	brute force, data structures, greedy, math	1700	7996
+2029C	New Rating	binary search, data structures, dp, greedy	1700	7993
+1153C	Serval and Parenthesis Sequence	greedy, strings	1700	7920
+2053D	Refined Product Optimality	binary search, data structures, greedy, math, schedules, sortings	1700	7897
+1706D1	Chopping Carrots (Easy Version)	binary search, brute force, constructive algorithms, greedy, number theory	1700	7845
+1168A	Increasing by Modulo	binary search, greedy	1700	7830
+1864D	Matrix Cascade	brute force, constructive algorithms, data structures, dp, greedy, math	1700	7804
+1975D	Paint the Tree	brute force, dfs and similar, dp, greedy, shortest paths, trees	1700	7784
+1884C	Medium Design	brute force, data structures, dp, greedy, sortings	1700	7670
+915C	Permute Digits	dp, greedy	1700	7658
+1579E2	Array Optimization by Deque	data structures, greedy	1700	7604
+1204C	Anna, Svyatoslav and Maps	dp, graphs, greedy, shortest paths	1700	7537
+2065F	Skibidus and Slay	data structures, dfs and similar, graphs, greedy, trees	1700	7535
+1903D1	Maximum And Queries (easy version)	binary search, bitmasks, brute force, greedy	1700	7524
+1608C	Game Master	data structures, dfs and similar, dp, graphs, greedy, two pointers	1700	7489
+1256C	Platforms Jumping	greedy	1700	7428
+2039D	Shohag Loves GCD	constructive algorithms, greedy, math, number theory	1700	7290
+2027D1	The Endspeaker (Easy Version)	binary search, dp, graphs, greedy, implementation, two pointers	1700	7267
+2178D	Xmas or Hysteria	constructive algorithms, greedy, implementation, math	1700	7143
+1799C	Double Lexicographically Minimum	greedy, strings	1700	7096
+1313B	Different Rules	constructive algorithms, greedy, implementation, math	1700	7090
+1672D	Cyclic Rotation	constructive algorithms, greedy, implementation, two pointers	1700	7047
+460C	Present	binary search, data structures, greedy	1700	7046
+1942C2	Bessie's Birthday Cake (Hard Version)	geometry, greedy, math	1700	7025
+1118D2	Coffee and Coursework (Hard Version)	binary search, greedy	1700	7025
+1015E1	Stars Drawing (Easy Edition)	brute force, dp, greedy	1700	7022
+1413D	Shurikens	data structures, greedy, implementation	1700	6998

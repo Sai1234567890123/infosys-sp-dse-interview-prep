@@ -1,0 +1,100 @@
+520B	Two Buttons	dfs and similar, graphs, greedy, implementation, math, shortest paths	1400	66977
+489C	Given Length and Sum of Digits...	dp, greedy, implementation	1400	53615
+1201C	Maximum Median	binary search, greedy, math, sortings	1400	37806
+479C	Exams	greedy, sortings	1400	34094
+1919C	Grouping Increases	data structures, dp, greedy	1400	31599
+1520E	Arranging The Sheep	greedy, math	1400	31058
+515C	Drazil and Factorial	greedy, math, sortings	1400	29305
+1931E	Anna and the Valentine's Day Gift	games, greedy, math, sortings	1400	28826
+1348B	Phoenix and Beauty	constructive algorithms, data structures, greedy, sortings	1400	28142
+26B	Regular Bracket Sequence	greedy	1400	27968
+1506D	Epic Transformation	constructive algorithms, data structures, greedy	1400	26515
+1701C	Schedule Management	binary search, greedy, implementation, two pointers	1400	26204
+1362C	Johnny and Another Rating Drop	bitmasks, greedy, math	1400	25557
+1365C	Rotation Matching	constructive algorithms, data structures, greedy, implementation	1400	25488
+1519C	Berland Regional	brute force, data structures, greedy, number theory, sortings	1400	24235
+1837D	Bracket Coloring	constructive algorithms, greedy	1400	24182
+1320A	Journey Planning	data structures, dp, greedy, math, sortings	1400	23518
+1878E	Iva & Pav	binary search, bitmasks, data structures, greedy	1400	23469
+1375C	Element Extermination	constructive algorithms, data structures, greedy	1400	23410
+1989C	Two Movies	greedy, math	1400	23339
+1380C	Create The Teams	brute force, dp, greedy, implementation, sortings	1400	23213
+1183D	Candy Box (easy version)	greedy, sortings	1400	22456
+401C	Team	constructive algorithms, greedy, implementation	1400	22168
+1883G1	Dances (Easy version)	binary search, greedy, two pointers	1400	21975
+1490E	Accidental Victory	binary search, data structures, greedy	1400	21622
+1463B	Find The Array	bitmasks, constructive algorithms, greedy	1400	21543
+1369C	RationalLee	greedy, math, sortings, two pointers	1400	21265
+1095C	Powers Of Two	bitmasks, greedy	1400	20428
+538B	Quasi Binary	constructive algorithms, dp, greedy, implementation	1400	19671
+1624D	Palindromes Coloring	binary search, greedy, sortings, strings	1400	19583
+1332B	Composite Coloring	brute force, constructive algorithms, greedy, math, number theory	1400	19445
+1605C	Dominant Character	brute force, greedy, implementation, strings	1400	19304
+1515C	Phoenix and Towers	constructive algorithms, data structures, greedy	1400	19220
+1923C	Find B	constructive algorithms, greedy	1400	19137
+1579D	Productive Meeting	constructive algorithms, graphs, greedy	1400	18844
+1312C	Adding Powers	bitmasks, greedy, implementation, math, number theory, ternary search	1400	18772
+1462D	Add to Neighbour and Remove	greedy, math, number theory	1400	18642
+2033C	Sakurako's Field Trip	dp, greedy, two pointers	1400	18563
+1986D	Mathematical Problem	brute force, dp, greedy, implementation, math, two pointers	1400	18481
+1728C	Digital Logarithm	data structures, greedy, sortings	1400	18281
+1110B	Tape	greedy, sortings	1400	18272
+1974D	Ingenuity-2	constructive algorithms, greedy, implementation	1400	18244
+2131E	Adjacent XOR	brute force, greedy	1400	18213
+1535C	Unstable String	binary search, dp, greedy, implementation, strings, two pointers	1400	18144
+1548A	Web of Lies	brute force, graphs, greedy	1400	18025
+1980D	GCD-sequence	greedy, implementation, math, number theory	1400	17918
+2055C	The Trail	brute force, constructive algorithms, greedy, math, two pointers	1400	17854
+1929C	Sasha and the Casino	binary search, brute force, constructive algorithms, games, greedy, math	1400	17763
+1451C	String Equality	dp, greedy, hashing, implementation, strings	1400	17573
+1691C	Sum of Substrings	brute force, constructive algorithms, greedy, math, strings	1400	17560
+1393B	Applejack and Storages	constructive algorithms, data structures, greedy, implementation	1400	17531
+1965A	Everything Nim	games, greedy, math, sortings	1400	17504
+1918C	XOR-distance	bitmasks, greedy, implementation, math	1400	17393
+1845C	Strong Password	binary search, dp, greedy, strings	1400	17374
+1628A	Meximum Array	binary search, constructive algorithms, greedy, implementation, math, two pointers	1400	17331
+1443C	The Delivery Dilemma	binary search, greedy, sortings	1400	17252
+1682C	LIS or Reverse LIS?	constructive algorithms, greedy, implementation, math	1400	16972
+1551B2	Wonderful Coloring - 2	binary search, constructive algorithms, data structures, greedy	1400	16918
+2000E	Photoshoot for Gorillas	combinatorics, data structures, greedy, math	1400	16912
+1840D	Wooden Toy Festival	binary search, greedy, sortings	1400	16884
+1559D1	Mocha and Diana (Easy Version)	brute force, constructive algorithms, dsu, graphs, greedy, trees	1400	16818
+1108D	Diverse Garland	constructive algorithms, dp, greedy	1400	16708
+2014D	Robert Hood and Mrs Hood	brute force, data structures, greedy, sortings	1400	16516
+2110C	Racing	constructive algorithms, greedy	1400	16512
+1706C	Qpwoeirut And The City	dp, flows, greedy, implementation	1400	16400
+1800E1	Unforgivable Curse (easy version)	brute force, constructive algorithms, dsu, graphs, greedy, strings	1400	16123
+1860C	Game on Permutation	data structures, dp, games, greedy	1400	16109
+1749C	Number Game	binary search, data structures, games, greedy, implementation	1400	16092
+1697C	awoo's Favorite Problem	binary search, constructive algorithms, data structures, greedy, implementation, strings, two pointers	1400	16070
+1573B	Swaps	greedy, math, sortings	1400	15767
+492C	Vanya and Exams	greedy, sortings	1400	15697
+445B	DZY Loves Chemistry	dfs and similar, dsu, greedy	1400	15693
+1452B	Toy Blocks	binary search, greedy, math, sortings	1400	15691
+2123E	MEX Count	binary search, data structures, greedy, sortings, two pointers	1400	15641
+1494B	Berland Crossword	bitmasks, brute force, greedy, implementation	1400	15553
+1197C	Array Splitting	greedy, sortings	1400	15547
+1758C	Almost All Multiples	greedy, number theory	1400	15463
+1967A	Permutation Counting	binary search, greedy, implementation, math, sortings	1400	15447
+1380B	Universal Solution	greedy	1400	15416
+1606C	Banknotes	greedy, number theory	1400	15412
+1833D	Flipper	brute force, constructive algorithms, greedy	1400	15391
+1644C	Increase Subarray Sums	brute force, dp, greedy, implementation	1400	15301
+1733D1	Zero-One (Easy Version)	constructive algorithms, greedy, math	1400	15283
+437C	The Child and Toy	graphs, greedy, sortings	1400	15251
+2127C	Trip Shopping	games, greedy, sortings	1400	15248
+2114D	Come a Little Closer	brute force, greedy, implementation, math	1400	15218
+2131D	Arboris Contractio	data structures, graphs, greedy, trees	1400	15204
+1540A	Great Graphs	constructive algorithms, graphs, greedy, shortest paths, sortings	1400	15198
+1914E2	Game with Marbles (Hard Version)	games, greedy, sortings	1400	15184
+2152C	Triple Removal	data structures, greedy, math	1400	15129
+1847C	Vampiric Powers, anyone?	bitmasks, brute force, dp, greedy	1400	15129
+1983C	Have Your Cake and Eat It Too	binary search, brute force, greedy, implementation	1400	15067
+1903C	Theofanis' Nightmare	constructive algorithms, greedy	1400	15028
+2033E	Sakurako, Kosuke, and the Permutation	brute force, data structures, dfs and similar, dsu, graphs, greedy, math	1400	15019
+1721C	Min-Max Array Transformation	binary search, greedy, two pointers	1400	14813
+1901C	Add, Divide and Floor	constructive algorithms, greedy, math	1400	14744
+2114E	Kirei Attacks the Estate	dfs and similar, dp, greedy, trees	1400	14743
+1654C	Alice and the Cake	data structures, greedy, implementation, sortings	1400	14692
+1914E1	Game with Marbles (Easy Version)	brute force, games, greedy, sortings	1400	14635
+1905C	Largest Subsequence	greedy, strings	1400	14617
