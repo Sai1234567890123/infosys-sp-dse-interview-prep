@@ -85,6 +85,7 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 16px 40p
     <button role="tab" data-tab="cf" aria-selected="false">Codeforces DP</button>
     <button role="tab" data-tab="greedy" aria-selected="false">Greedy</button>
 <button role="tab" data-tab="sheet" aria-selected="false">Sheet 1q–25q</button>
+    <button role="tab" data-tab="kgreedy" aria-selected="false">Kumar K greedy</button>
     <button role="tab" data-tab="top" aria-selected="false">CF Top 150</button>
     <button role="tab" data-tab="plan" aria-selected="false">Plan</button>
     <button role="tab" data-tab="method" aria-selected="false">How scores work</button>
@@ -154,6 +155,16 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 16px 40p
     <div class="count" id="sh-count"></div>
     <div id="sh-list"></div>
     <div class="more"><button id="sh-more">Show more</button></div>
+  </section>
+
+  <section id="tab-kgreedy" class="hidden">
+    <div class="count" style="margin-bottom:8px">Every greedy-pattern problem from the Kumar K list (sheet items 1q–90q). Same records as the Sheet tab, filtered to greedy.</div>
+    <div class="controls">
+      <input id="kg-q" type="search" placeholder="Search id, brief, mapping…">
+    </div>
+    <div class="count" id="kg-count"></div>
+    <div id="kg-list"></div>
+    <div class="more"><button id="kg-more">Show more</button></div>
   </section>
 
   <section id="tab-top" class="hidden">
@@ -226,7 +237,7 @@ const PAGE = 60;
 // tabs
 document.querySelectorAll('nav.tabs button').forEach(b => b.addEventListener('click', () => {
   document.querySelectorAll('nav.tabs button').forEach(x => x.setAttribute('aria-selected', x === b ? 'true' : 'false'));
-  ['start','inf','cf','greedy','sheet','top','plan','method'].forEach(t => $('tab-' + t).classList.toggle('hidden', t !== b.dataset.tab));
+  ['start','inf','cf','greedy','sheet','kgreedy','top','plan','method'].forEach(t => $('tab-' + t).classList.toggle('hidden', t !== b.dataset.tab));
 }));
 
 // stats
@@ -448,11 +459,10 @@ top.forEach(q => $('top-list').append(renderCf(q)));
   document.getElementById('gr-sort').addEventListener('change', e => { st.sort = e.target.value; refresh(); });
   refresh();
 })();
-})();
 
 // Sheet tab (items 1q–25q from the shared sheet)
 (function(){
-  const S = D.sheet || [];
+  const S = JSON.parse(document.getElementById('data').textContent).sheet || [];
   const st = {q: '', status: ''};
   function statusKey(r) {
     const t = (r.status || '').toLowerCase();
@@ -486,6 +496,35 @@ top.forEach(q => $('top-list').append(renderCf(q)));
   document.getElementById('sh-q').addEventListener('input', e => { st.q = e.target.value.trim().toLowerCase(); refresh(); });
   document.getElementById('sh-status').addEventListener('change', e => { st.status = e.target.value; refresh(); });
   refresh();
+})();
+
+// Kumar K greedy tab (sheet records whose pattern includes Greedy)
+(function(){
+  const G = (JSON.parse(document.getElementById('data').textContent).sheet || []).filter(r => (r.patterns || []).some(p => p.toLowerCase().includes('greedy')));
+  let q = '';
+  function row(r) {
+    const card = el('div', 'card');
+    card.append(el('h3', '', r.sheet_id + ' — ' + r.brief));
+    card.append(el('div', 'meta', 'Pattern: ' + (r.patterns || []).join(', ')));
+    card.append(el('p', '', 'Solution: ' + r.solution));
+    card.append(el('p', '', 'Check: ' + r.verification));
+    card.append(el('p', '', 'External: ' + r.external_mapping + ' | Infosys DB: ' + r.infosys_mapping));
+    card.append(el('p', '', 'Status: ' + r.status));
+    return card;
+  }
+  function filt() {
+    return G.filter(r => {
+      if (!q) return true;
+      const h = (r.sheet_id + ' ' + r.brief + ' ' + r.external_mapping + ' ' + r.infosys_mapping + ' ' + r.status).toLowerCase();
+      return h.includes(q);
+    });
+  }
+  let pager = null;
+  function refresh() { pager = paged(document.getElementById('kg-list'), document.getElementById('kg-count'), document.getElementById('kg-more'), filt(), row); }
+  document.getElementById('kg-more').addEventListener('click', () => pager.reset());
+  document.getElementById('kg-q').addEventListener('input', e => { q = e.target.value.trim().toLowerCase(); refresh(); });
+  refresh();
+})();
 })();
 </script>
 </body>
