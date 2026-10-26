@@ -1,10 +1,23 @@
-"""Add the Kumar K list (sheet 1q-90q) to the Greedy tab of website/index.html.
+"""Add the Kumar K list (sheet 1q-90q) to the Greedy and Kumar K greedy tabs of website/index.html.
 
-Each sheet record gets a `code` field (C++ or Python cut from the sheet_* solution files)
-and is stored under D.kgreedy. Re-running replaces the previous kgreedy data and script.
+Each sheet record gets the study notes from sheet_1q_25q/kumar_k_notes_{a,b,c}.py (rating, patterns,
+key idea, steps, complexity, dry run), the scores from sheet_1q_25q/kumar_k_scores.json (run
+scripts/score_kumar_k.py first), and the C++ or Python cut from the sheet_* solution files.
+Records are stored under D.kgreedy. Re-running replaces the previous kgreedy data and scripts.
 Usage: python3 scripts/add_kumar_greedy.py   (run from infosys-prep/)
 """
-import glob, json, re
+import glob, json, re, sys
+
+sys.path.insert(0, 'sheet_1q_25q')
+from kumar_k_notes_a import NOTES as NA
+from kumar_k_notes_b import NOTES as NB
+from kumar_k_notes_c import NOTES as NC
+
+KG_CONTROLS = '''      <input id="kg-q" type="search" placeholder="Search id, brief, pattern, nearest Infosys question…">
+      <select id="kg-pat"><option value="">All patterns</option></select>
+      <select id="kg-rat"><option value="">Any rating</option><option value="0">Under 1400</option><option value="1400">1400–1600</option><option value="1700">1700–1900</option><option value="2000">2000–2200</option></select>
+      <select id="kg-sort"><option value="list">Sort: sheet order</option><option value="pred">Sort: prediction index</option><option value="match">Sort: match %</option><option value="rating">Sort: rating</option></select>
+'''
 
 HTML = 'website/index.html'
 
@@ -73,12 +86,20 @@ def main():
     m = re.search(r'(<script id="data" type="application/json">)(.*?)(</script>)', h, re.S)
     D = json.loads(m.group(2))
     code = {**py_snippets(), **cpp_snippets()}
+    notes = {**NA, **NB, **NC}
+    scores = json.load(open('sheet_1q_25q/kumar_k_scores.json'))
     kg = []
     for r in D['sheet']:
-        pats = sorted({p.strip() for x in r.get('patterns', []) for p in x.split(',') if p.strip() and p.strip() != 'n/a'})
-        lang, src, f = code.get(r['sheet_id'], ('', '', ''))
-        kg.append({**r, 'patterns': pats, 'state': short_status(r.get('status')),
-                   'code_lang': lang, 'code': src, 'code_file': f})
+        sid = r['sheet_id']
+        n, sc = notes[sid], scores[sid]
+        own = sorted({p.strip() for x in r.get('patterns', []) for p in x.split(',') if p.strip() and p.strip() != 'n/a'})
+        lang, src, f = code.get(sid, ('', '', ''))
+        kg.append({**r, 'sheet_patterns': own, 'is_greedy': any('greedy' in p.lower() for p in own),
+                   'patterns': n['pats'], 'topics': n['topics'], 'rating': n['rating'] or 0,
+                   'match_pct': sc['match_pct'], 'prediction_index': sc['prediction_index'],
+                   'nearest_infosys_question': sc['nearest_infosys_question'],
+                   'key_idea': n['key'], 'steps': n['steps'], 'complexity': n['cx'], 'dry_run': n['dry'],
+                   'state': short_status(r.get('status')), 'code_lang': lang, 'code': src, 'code_file': f})
     D['kgreedy'] = kg
     h = h[:m.start(2)] + json.dumps(D, ensure_ascii=False).replace('</', '<\\/') + h[m.end(2):]
 
@@ -90,8 +111,19 @@ def main():
                       '<select id="gr-src"><option value="">All sources</option><option value="kk">Kumar K list (1q–90q)</option><option value="cf">Codeforces list</option></select>\n'
                       '      <input id="gr-q" type="search" placeholder="Search name, pattern, nearest Infosys question…">')
 
-    old_js = re.search(r'// Greedy tab \(separate section\)[^\n]*\n\(function\(\)\{.*?\n\}\)\(\);\n', h, re.S)
-    h = h[:old_js.start()] + open('scripts/greedy_tab.js').read() + h[old_js.end():]
+    # Rating filter: add an "under 1400" band for the easier sheet items
+    h = h.replace('<select id="gr-rat"><option value="">Any rating</option><option value="1400">',
+                  '<select id="gr-rat"><option value="">Any rating</option><option value="0">Under 1400</option><option value="1400">')
+    # Kumar K greedy tab: same controls as the Codeforces DP tab
+    h = re.sub(r'      <input id="kg-q"[^\n]*\n(      <select id="kg-[^\n]*\n)*', lambda _: KG_CONTROLS, h)
+    h = h.replace('Every greedy-pattern problem from the Kumar K list (sheet items 1q–90q). Same records as the Sheet tab, filtered to greedy.',
+                  'Every greedy-pattern problem from the Kumar K list (sheet items 1q–90q), with rating, match %, prediction index, key idea, steps, complexity, dry run and code, like the Codeforces DP tab.')
+
+    # The Greedy block runs up to the Sheet tab; the Kumar K block is replaced by its own file.
+    old_js = re.search(r'// Greedy tab \(separate section\)[^\n]*\n.*?(?=\n// Sheet tab)', h, re.S)
+    h = h[:old_js.start()] + open('scripts/greedy_tab.js').read().rstrip('\n') + '\n' + h[old_js.end():]
+    old_kg = re.search(r'// Kumar K greedy tab[^\n]*\n\(function\(\)\{.*?\n\}\)\(\);\n', h, re.S)
+    h = h[:old_kg.start()] + open('scripts/kumar_k_tab.js').read() + h[old_kg.end():]
     open(HTML, 'w').write(h)
     st = {}
     for r in kg: st[r['state']] = st.get(r['state'], 0) + 1
