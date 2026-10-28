@@ -111,6 +111,8 @@ CODE_FILES = {
  '37q': ('lps_k_ops37q.cpp', 'C++'), '40q': ('burst_balloons40q.cpp', 'C++'),
  '42q': ('equal_sum_moves42q.cpp', 'C++'), '43q': ('partition_sum_k43q.cpp', 'C++'),
  '45q': ('power_of_five45q.cpp', 'C++'), '47q': ('equal_freq_partition47q.cpp', 'C++'),
+ '1q': ('prefix_sums1q.py', 'Python'), '2q': ('prefix_sums_queries2q.cpp', 'C++'),
+ '6q': ('k_interspace6q.py', 'Python'), '22q': ('dp_batch1_13q22q.py', 'Python'),
 }
 
 def rec(sid, brief, patterns, key, steps, cx, dry, verification, code_file, lang):
@@ -142,6 +144,15 @@ def main():
             cf, lang = CODE_FILES[sid]
         added.append(rec(sid, brief, patterns, key, steps, cx, dry, ver, cf, lang))
     D['kdp'] = sorted(kept + added, key=lambda r: int(re.match(r'\d+', r['sheet_id']).group()))
+    for r in D['kdp']:  # attach solver files to records that were built earlier (1q, 2q, 6q)
+        if r['sheet_id'] in CODE_FILES and not r['code']:
+            cf, lang = CODE_FILES[r['sheet_id']]
+            path = os.path.join(CODE, cf)
+            if os.path.exists(path):
+                r['code'] = open(path).read().rstrip()
+                r['code_file'] = cf
+                r['code_lang'] = lang
+                r['status'] = 'solved from the paste text; verified against brute force'
     h = h[:m.start(2)] + json.dumps(D, ensure_ascii=False).replace('</', '<\\/') + h[m.end(2):]
     h = h.replace('(sections 1q–27q)', '(sections 1q–50q)')
     open(HTML, 'w', encoding='utf-8').write(h)
