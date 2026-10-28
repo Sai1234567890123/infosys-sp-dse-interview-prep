@@ -107,6 +107,12 @@ ITEMS = [
   'See 49q.', 'O(N) time, O(N) space', 'Sample 84 (same as 49q).', 'see 49q', 'partition_cost49q.cpp', 'C++'),
 ]
 
+CODE_FILES = {
+ '37q': ('lps_k_ops37q.cpp', 'C++'), '40q': ('burst_balloons40q.cpp', 'C++'),
+ '42q': ('equal_sum_moves42q.cpp', 'C++'), '43q': ('partition_sum_k43q.cpp', 'C++'),
+ '45q': ('power_of_five45q.cpp', 'C++'), '47q': ('equal_freq_partition47q.cpp', 'C++'),
+}
+
 def rec(sid, brief, patterns, key, steps, cx, dry, verification, code_file, lang):
     code = ''
     if code_file and os.path.exists(os.path.join(CODE, code_file)):
@@ -127,13 +133,19 @@ def main():
     h = open(HTML, encoding='utf-8').read()
     m = re.search(r'(<script id="data" type="application/json">)(.*?)(</script>)', h, re.S)
     D = json.loads(m.group(2))
-    have = {r['sheet_id'] for r in D.get('kdp', [])}
-    added = [rec(*it) for it in ITEMS if it[0] not in have]
-    D['kdp'] = sorted(D.get('kdp', []) + added, key=lambda r: int(re.match(r'\d+', r['sheet_id']).group()))
+    ids = {it[0] for it in ITEMS}
+    kept = [r for r in D.get('kdp', []) if r['sheet_id'] not in ids]
+    added = []
+    for it in ITEMS:
+        sid, brief, patterns, key, steps, cx, dry, ver, cf, lang = it
+        if sid in CODE_FILES:
+            cf, lang = CODE_FILES[sid]
+        added.append(rec(sid, brief, patterns, key, steps, cx, dry, ver, cf, lang))
+    D['kdp'] = sorted(kept + added, key=lambda r: int(re.match(r'\d+', r['sheet_id']).group()))
     h = h[:m.start(2)] + json.dumps(D, ensure_ascii=False).replace('</', '<\\/') + h[m.end(2):]
     h = h.replace('(sections 1q–27q)', '(sections 1q–50q)')
     open(HTML, 'w', encoding='utf-8').write(h)
-    print('added', len(added), 'records; total', len(D['kdp']), '; with code', sum(1 for r in D['kdp'] if r['code']))
+    print('rebuilt', len(added), 'records; total', len(D['kdp']), '; with code', sum(1 for r in D['kdp'] if r['code']))
 
 if __name__ == '__main__':
     main()
