@@ -1,0 +1,457 @@
+{
+ "1q": {
+  "match_pct": 96,
+  "prediction_index": 97,
+  "nearest_infosys_question": "Q0440 Two City Scheduling variant"
+ },
+ "2q": {
+  "match_pct": 90,
+  "prediction_index": 94,
+  "nearest_infosys_question": "Q0517 Min swaps to maximize product of pair sums"
+ },
+ "3q": {
+  "match_pct": 84,
+  "prediction_index": 92,
+  "nearest_infosys_question": "Q0517 Min swaps to maximize product of pair sums"
+ },
+ "4q": {
+  "match_pct": 79,
+  "prediction_index": 89,
+  "nearest_infosys_question": "Q0480 Minimum Adjacent Swaps to Group Binary String"
+ },
+ "5q": {
+  "match_pct": 56,
+  "prediction_index": 63,
+  "nearest_infosys_question": "Q0113 Heroes vs Villains (remove from front)"
+ },
+ "6q": {
+  "match_pct": 86,
+  "prediction_index": 78,
+  "nearest_infosys_question": "Q0092 Array AP Queries"
+ },
+ "7q": {
+  "match_pct": 90,
+  "prediction_index": 94,
+  "nearest_infosys_question": "Q0767 Largest triangle-like perimeter under half-sum bound"
+ },
+ "8q": {
+  "match_pct": 76,
+  "prediction_index": 87,
+  "nearest_infosys_question": "Q0875 Minimum adjacent swaps to group 1s or 0s in binary string"
+ },
+ "9q": {
+  "match_pct": 82,
+  "prediction_index": 78,
+  "nearest_infosys_question": "Q0644 Negative base 2 conversion"
+ },
+ "10q": {
+  "match_pct": 98,
+  "prediction_index": 90,
+  "nearest_infosys_question": "Q0546 Binary array trim to balance"
+ },
+ "11q": {
+  "match_pct": 0,
+  "prediction_index": 0,
+  "nearest_infosys_question": ""
+ },
+ "12q": {
+  "match_pct": 68,
+  "prediction_index": 70,
+  "nearest_infosys_question": "Q0881 Magical Vine (alternating P/Q prefix pattern)"
+ },
+ "13q": {
+  "match_pct": 91,
+  "prediction_index": 95,
+  "nearest_infosys_question": "Q0509 Playing with MEX"
+ },
+ "14q": {
+  "match_pct": 78,
+  "prediction_index": 84,
+  "nearest_infosys_question": "Q0478 Battery charge to make array strictly increasing"
+ },
+ "15q": {
+  "match_pct": 96,
+  "prediction_index": 97,
+  "nearest_infosys_question": "Q0764 Merge Intervals variant"
+ },
+ "16q": {
+  "match_pct": 79,
+  "prediction_index": 89,
+  "nearest_infosys_question": "Q0480 Minimum Adjacent Swaps to Group Binary String"
+ },
+ "17q": {
+  "match_pct": 92,
+  "prediction_index": 91,
+  "nearest_infosys_question": "Q0440 Two City Scheduling variant"
+ },
+ "18q": {
+  "match_pct": 96,
+  "prediction_index": 97,
+  "nearest_infosys_question": "Q0440 Two City Scheduling variant"
+ },
+ "19q": {
+  "match_pct": 82,
+  "prediction_index": 90,
+  "nearest_infosys_question": "Q0517 Min swaps to maximize product of pair sums"
+ },
+ "20q": {
+  "match_pct": 92,
+  "prediction_index": 96,
+  "nearest_infosys_question": "Q0064 Insert Interval"
+ },
+ "21q": {
+  "match_pct": 60,
+  "prediction_index": 80,
+  "nearest_infosys_question": "Q0441 Min operations to make GCD of array multiple of K (similar)"
+ },
+ "22q": {
+  "match_pct": 91,
+  "prediction_index": 79,
+  "nearest_infosys_question": "Q0092 Array AP Queries"
+ },
+ "23q": {
+  "match_pct": 100,
+  "prediction_index": 94,
+  "nearest_infosys_question": "Q0483 Max score walking exactly k moves on array"
+ },
+ "24q": {
+  "match_pct": 100,
+  "prediction_index": 100,
+  "nearest_infosys_question": "Q0440 Two City Scheduling variant"
+ },
+ "25q": {
+  "match_pct": 81,
+  "prediction_index": 90,
+  "nearest_infosys_question": "Q0875 Minimum adjacent swaps to group 1s or 0s in binary string"
+ },
+ "26q": {
+  "match_pct": 98,
+  "prediction_index": 99,
+  "nearest_infosys_question": "Q0509 Playing with MEX"
+ },
+ "27q": {
+  "match_pct": 96,
+  "prediction_index": 97,
+  "nearest_infosys_question": "Q0924 3Sum Closest"
+ },
+ "28q": {
+  "match_pct": 80,
+  "prediction_index": 88,
+  "nearest_infosys_question": "Q0440 Two City Scheduling variant"
+ },
+ "29q": {
+  "match_pct": 100,
+  "prediction_index": 100,
+  "nearest_infosys_question": "Q0440 Two City Scheduling variant"
+ },
+ "30q": {
+  "match_pct": 48,
+  "prediction_index": 44,
+  "nearest_infosys_question": "Q0560 Running median of temperatures"
+ },
+ "30q-b": {
+  "match_pct": 94,
+  "prediction_index": 86,
+  "nearest_infosys_question": "Q0938 Count subarrays with product >= K"
+ },
+ "31q": {
+  "match_pct": 94,
+  "prediction_index": 96,
+  "nearest_infosys_question": "Q0509 Playing with MEX"
+ },
+ "32q": {
+  "match_pct": 100,
+  "prediction_index": 95,
+  "nearest_infosys_question": "Q0451 Maximise number by mapping one contiguous segment of digits"
+ },
+ "33q": {
+  "match_pct": 82,
+  "prediction_index": 90,
+  "nearest_infosys_question": "Q0517 Min swaps to maximize product of pair sums"
+ },
+ "34q": {
+  "match_pct": 98,
+  "prediction_index": 94,
+  "nearest_infosys_question": "Q0451 Maximise number by mapping one contiguous segment of digits"
+ },
+ "35q": {
+  "match_pct": 62,
+  "prediction_index": 80,
+  "nearest_infosys_question": "Q0477 Minimum cycles to generate required power"
+ },
+ "36q": {
+  "match_pct": 56,
+  "prediction_index": 77,
+  "nearest_infosys_question": "Q0131 Maximize sum of (X XOR a[i]) for X in [0,K]"
+ },
+ "37q": {
+  "match_pct": 61,
+  "prediction_index": 58,
+  "nearest_infosys_question": "Q0557 Minimum Makespan on M Servers with Thermal Throttling"
+ },
+ "38q": {
+  "match_pct": 74,
+  "prediction_index": 84,
+  "nearest_infosys_question": "Q0875 Minimum adjacent swaps to group 1s or 0s in binary string"
+ },
+ "39q": {
+  "match_pct": 68,
+  "prediction_index": 78,
+  "nearest_infosys_question": "Q0448 Paper Sheets (Minimum Folds)"
+ },
+ "40q": {
+  "match_pct": 96,
+  "prediction_index": 97,
+  "nearest_infosys_question": "Q0440 Two City Scheduling variant"
+ },
+ "41q": {
+  "match_pct": 91,
+  "prediction_index": 95,
+  "nearest_infosys_question": "Q0767 Largest triangle-like perimeter under half-sum bound"
+ },
+ "42q": {
+  "match_pct": 86,
+  "prediction_index": 86,
+  "nearest_infosys_question": "Q0469 Remove two distinct or one element"
+ },
+ "43q": {
+  "match_pct": 96,
+  "prediction_index": 93,
+  "nearest_infosys_question": "Q0474 Minimum candy distribution by ratings"
+ },
+ "44q": {
+  "match_pct": 92,
+  "prediction_index": 90,
+  "nearest_infosys_question": "Q0456 Minimum jumps to reach end of array"
+ },
+ "45q": {
+  "match_pct": 79,
+  "prediction_index": 90,
+  "nearest_infosys_question": "Q0113 Heroes vs Villains (remove from front)"
+ },
+ "46q": {
+  "match_pct": 90,
+  "prediction_index": 90,
+  "nearest_infosys_question": "Q0492 Maximum Count of Processed Numbers"
+ },
+ "47q": {
+  "match_pct": 51,
+  "prediction_index": 75,
+  "nearest_infosys_question": "Q0648 Minimum count of numbers in bag 1 summing to X"
+ },
+ "48q": {
+  "match_pct": 59,
+  "prediction_index": 80,
+  "nearest_infosys_question": "Q0113 Heroes vs Villains (remove from front)"
+ },
+ "49q": {
+  "match_pct": 98,
+  "prediction_index": 98,
+  "nearest_infosys_question": "Q0505 Max Subarray Sum after K swaps"
+ },
+ "50q": {
+  "match_pct": 98,
+  "prediction_index": 98,
+  "nearest_infosys_question": "Q0768 Reduce array to half by removing a value range"
+ },
+ "51q": {
+  "match_pct": 100,
+  "prediction_index": 100,
+  "nearest_infosys_question": "Q0764 Merge Intervals variant"
+ },
+ "52q": {
+  "match_pct": 98,
+  "prediction_index": 99,
+  "nearest_infosys_question": "Q0764 Merge Intervals variant"
+ },
+ "53q": {
+  "match_pct": 100,
+  "prediction_index": 99,
+  "nearest_infosys_question": "Q0460 Min cost to collect items with free items (V vouchers)"
+ },
+ "54q": {
+  "match_pct": 96,
+  "prediction_index": 76,
+  "nearest_infosys_question": "Q0476 Food Stamps (max tastiness with decrements)"
+ },
+ "55q": {
+  "match_pct": 92,
+  "prediction_index": 95,
+  "nearest_infosys_question": "Q0366 Kruskal's minimum spanning tree"
+ },
+ "56q": {
+  "match_pct": 100,
+  "prediction_index": 99,
+  "nearest_infosys_question": "Q0460 Min cost to collect items with free items (V vouchers)"
+ },
+ "57q": {
+  "match_pct": 100,
+  "prediction_index": 99,
+  "nearest_infosys_question": "Q0477 Minimum cycles to generate required power"
+ },
+ "58q": {
+  "match_pct": 94,
+  "prediction_index": 93,
+  "nearest_infosys_question": "Q0496 Tug of war with doubled captain"
+ },
+ "59q": {
+  "match_pct": 82,
+  "prediction_index": 90,
+  "nearest_infosys_question": "Q0517 Min swaps to maximize product of pair sums"
+ },
+ "60q": {
+  "match_pct": 98,
+  "prediction_index": 94,
+  "nearest_infosys_question": "Q0483 Max score walking exactly k moves on array"
+ },
+ "61q": {
+  "match_pct": 98,
+  "prediction_index": 99,
+  "nearest_infosys_question": "Q0924 3Sum Closest"
+ },
+ "62q": {
+  "match_pct": 57,
+  "prediction_index": 78,
+  "nearest_infosys_question": "Q0113 Heroes vs Villains (remove from front)"
+ },
+ "63q": {
+  "match_pct": 98,
+  "prediction_index": 99,
+  "nearest_infosys_question": "Q0768 Reduce array to half by removing a value range"
+ },
+ "64q": {
+  "match_pct": 90,
+  "prediction_index": 69,
+  "nearest_infosys_question": "Q0639 Palindrome number and next palindrome"
+ },
+ "65q": {
+  "match_pct": 98,
+  "prediction_index": 99,
+  "nearest_infosys_question": "Q0440 Two City Scheduling variant"
+ },
+ "66q": {
+  "match_pct": 98,
+  "prediction_index": 98,
+  "nearest_infosys_question": "Q0296 Hotel customers minimum unhappiness (Chef Monocarp)"
+ },
+ "67q": {
+  "match_pct": 94,
+  "prediction_index": 83,
+  "nearest_infosys_question": "Q0067 Array rotation with prefix sums"
+ },
+ "68q": {
+  "match_pct": 72,
+  "prediction_index": 59,
+  "nearest_infosys_question": "Q0796 Good Subarrays (min vs second min diff <= D)"
+ },
+ "69q": {
+  "match_pct": 88,
+  "prediction_index": 94,
+  "nearest_infosys_question": "Q0767 Largest triangle-like perimeter under half-sum bound"
+ },
+ "70q": {
+  "match_pct": 80,
+  "prediction_index": 63,
+  "nearest_infosys_question": "Q0796 Good Subarrays (min vs second min diff <= D)"
+ },
+ "71q": {
+  "match_pct": 96,
+  "prediction_index": 98,
+  "nearest_infosys_question": "Q0767 Largest triangle-like perimeter under half-sum bound"
+ },
+ "72q": {
+  "match_pct": 100,
+  "prediction_index": 78,
+  "nearest_infosys_question": "Q0487 Job scheduling with priorities and delay"
+ },
+ "73q": {
+  "match_pct": 98,
+  "prediction_index": 98,
+  "nearest_infosys_question": "Q0115 Make all elements non-positive (subtract A from one, B from rest)"
+ },
+ "74q": {
+  "match_pct": 90,
+  "prediction_index": 90,
+  "nearest_infosys_question": "Q0492 Maximum Count of Processed Numbers"
+ },
+ "75q": {
+  "match_pct": 88,
+  "prediction_index": 94,
+  "nearest_infosys_question": "Q0517 Min swaps to maximize product of pair sums"
+ },
+ "76q": {
+  "match_pct": 94,
+  "prediction_index": 92,
+  "nearest_infosys_question": "Q0468 Summer array - min adjacent swaps to separate parity"
+ },
+ "77q": {
+  "match_pct": 78,
+  "prediction_index": 79,
+  "nearest_infosys_question": "Q0546 Binary array trim to balance"
+ },
+ "78q": {
+  "match_pct": 94,
+  "prediction_index": 92,
+  "nearest_infosys_question": "Q0646 Booster to maximise array product"
+ },
+ "79q": {
+  "match_pct": 48,
+  "prediction_index": 44,
+  "nearest_infosys_question": "Q0560 Running median of temperatures"
+ },
+ "80q": {
+  "match_pct": 0,
+  "prediction_index": 0,
+  "nearest_infosys_question": ""
+ },
+ "81q": {
+  "match_pct": 81,
+  "prediction_index": 91,
+  "nearest_infosys_question": "Q0115 Make all elements non-positive (subtract A from one, B from rest)"
+ },
+ "82q": {
+  "match_pct": 86,
+  "prediction_index": 92,
+  "nearest_infosys_question": "Q0467 Character Frequency Rearrangement"
+ },
+ "83q": {
+  "match_pct": 83,
+  "prediction_index": 86,
+  "nearest_infosys_question": "Q0492 Maximum Count of Processed Numbers"
+ },
+ "84q": {
+  "match_pct": 51,
+  "prediction_index": 70,
+  "nearest_infosys_question": "Q0474 Minimum candy distribution by ratings"
+ },
+ "85q": {
+  "match_pct": 98,
+  "prediction_index": 94,
+  "nearest_infosys_question": "Q0483 Max score walking exactly k moves on array"
+ },
+ "86q": {
+  "match_pct": 98,
+  "prediction_index": 95,
+  "nearest_infosys_question": "Q0770 Maximum intersection length of M intervals"
+ },
+ "87q": {
+  "match_pct": 48,
+  "prediction_index": 64,
+  "nearest_infosys_question": "Q0498 Make Equal Elements Adjacent (min adjacent swaps)"
+ },
+ "88q": {
+  "match_pct": 81,
+  "prediction_index": 84,
+  "nearest_infosys_question": "Q0499 Rugged Terrain (strictly descending slope)"
+ },
+ "89q": {
+  "match_pct": 77,
+  "prediction_index": 88,
+  "nearest_infosys_question": "Q0875 Minimum adjacent swaps to group 1s or 0s in binary string"
+ },
+ "90q": {
+  "match_pct": 66,
+  "prediction_index": 83,
+  "nearest_infosys_question": "Q0113 Heroes vs Villains (remove from front)"
+ }
+}
