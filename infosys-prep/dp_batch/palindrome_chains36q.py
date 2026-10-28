@@ -67,6 +67,8 @@ def brute(s):
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == '--test':
         assert chain_counts('bbaa') == (11, 6)  # statement says 10 pairs; brute force gives 11
+        assert chain_counts('aaa')[0] == 5  # GfG non-overlapping palindrome pairs examples
+        assert chain_counts('abacaba')[0] == 36
         rng = random.Random(36)
         for _ in range(500):
             n = rng.randint(1, 8)
