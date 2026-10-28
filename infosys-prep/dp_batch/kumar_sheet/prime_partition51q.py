@@ -4,8 +4,8 @@ window is below 10^6), so every part is checked with a sieve.
 
 dp[i] = sum over k in 1..6 of dp[i-k] when the last k digits form a prime number.
 Time O(N * 6) after an O(M log log M) sieve, with M = 10^6. Memory O(N + M).
-Assumption (from the paste's formula): a part is judged by its value only, so a part
-with leading zeros is allowed when its value is prime.
+Assumption: a part may not start with '0' (no leading zeros). Without this rule a part such
+as '0000003' would be longer than six digits and the six-digit window would miss it.
 """
 import random
 import sys
@@ -31,7 +31,7 @@ def count_prime_partitions(s):
         total = 0
         for k in range(1, min(6, i) + 1):
             v = int(s[i - k:i])
-            if v <= 10 ** 6 - 1 and PRIME[v] and dp[i - k]:
+            if s[i - k] != '0' and v <= 10 ** 6 - 1 and PRIME[v] and dp[i - k]:
                 total += dp[i - k]
         dp[i] = total
     return dp[n]
@@ -47,7 +47,7 @@ def brute(s):
         ok = True
         for a, b in zip(cuts, cuts[1:]):
             v = int(s[a:b])
-            if not (v < 10 ** 6 and PRIME[v]):
+            if s[a] == '0' or not (v < 10 ** 6 and PRIME[v]):
                 ok = False
                 break
         total += ok
