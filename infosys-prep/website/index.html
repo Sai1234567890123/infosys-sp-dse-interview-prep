@@ -72,6 +72,21 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 16px 40p
   .more button{width:100%;min-height:44px}
 }
 </style>
+<style id="voice-css">
+.voicebar{position:sticky;top:0;z-index:20;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:8px 12px;display:flex;gap:8px 12px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.voicebar label{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--muted)}
+.voicebar select{font:inherit;font-size:16px;max-width:220px;padding:5px 8px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text)}
+.voicebar button,.vbtn{border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:5px 12px;cursor:pointer;font:inherit;font-size:13px;min-height:36px}
+.voicebar button:disabled{opacity:.45;cursor:default}
+.voicebar #v-status{flex:1 1 200px;font-size:13px;color:var(--muted);overflow-wrap:anywhere}
+.vbtn{margin-left:auto}
+.item.v-speaking,.card.v-speaking{outline:2px solid var(--accent)}
+.item.v-speaking>summary{background:var(--accent-soft);border-radius:10px 10px 0 0}
+@media (max-width:640px){
+  .voicebar select{max-width:100%;flex:1 1 140px}
+  .voicebar button{flex:0 0 auto}
+}
+</style>
 </head>
 <body>
 <header>
@@ -79,6 +94,14 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 16px 40p
   <p>945 Infosys coding questions (2021–2026) and 1,120 Codeforces DP problems rated 1400–2200, each with pattern, approach, steps, dry run and C++. Start with the Codeforces Top 150.</p>
 </header>
 <main>
+  <div id="voicebar" class="voicebar" role="region" aria-label="Read aloud controls">
+    <strong>🔊 Read aloud</strong>
+    <label>Voice <select id="v-voice" aria-label="English voice"></select></label>
+    <label>Speed <select id="v-rate" aria-label="Speech speed"><option value="0.8">Slow</option><option value="1" selected>Normal</option><option value="1.2">Fast</option><option value="1.5">Faster</option></select></label>
+    <button id="v-pause" type="button" disabled>Pause</button>
+    <button id="v-stop" type="button" disabled>Stop</button>
+    <span id="v-status" role="status" aria-live="polite">Press 🔊 Listen on any problem card.</span>
+  </div>
   <nav class="tabs" role="tablist">
     <button role="tab" data-tab="start" aria-selected="true">Start here</button>
     <button role="tab" data-tab="inf" aria-selected="false">Infosys questions</button>
@@ -594,6 +617,209 @@ function fillPatterns(sel, items) {
   document.getElementById('kg-sort').addEventListener('change', e => { st.sort = e.target.value; refresh(); });
   refresh();
 })();
+})();
+</script>
+<script id="voice-js">
+// Read-aloud support for the guide: a Listen button on every problem card, using the browser's built-in
+// English voices (Web Speech API). Runs after the main script and only touches the DOM it renders.
+(function(){
+'use strict';
+var bar = document.getElementById('voicebar');
+if (!bar) return;
+var synth = window.speechSynthesis;
+var supported = !!synth && typeof window.SpeechSynthesisUtterance === 'function';
+var voiceSel = document.getElementById('v-voice'), rateSel = document.getElementById('v-rate');
+var pauseBtn = document.getElementById('v-pause'), stopBtn = document.getElementById('v-stop');
+var status = document.getElementById('v-status');
+if (!supported) {
+  bar.querySelectorAll('select,button').forEach(function(e){ e.disabled = true; });
+  status.textContent = 'This browser has no speech support, so reading aloud is unavailable. Try Chrome, Edge or Safari.';
+  return;
+}
+
+// remembered voice and speed (per viewer, optional)
+var KEY = 'infosys-voice-v1', pref = {voice: '', rate: '1'};
+try { var saved = JSON.parse(localStorage.getItem(KEY) || '{}'); if (saved.voice) pref.voice = saved.voice; if (saved.rate) pref.rate = saved.rate; } catch (e) {}
+function savePref() { try { localStorage.setItem(KEY, JSON.stringify(pref)); } catch (e) {} }
+
+var voices = [];
+function loadVoices() {
+  voices = synth.getVoices().filter(function(v){ return /^en([-_]|$)/i.test(v.lang); });
+  voiceSel.replaceChildren();
+  if (!voices.length) {
+    var o = document.createElement('option'); o.value = ''; o.textContent = 'Default English voice'; voiceSel.append(o); return;
+  }
+  var chosen = voices.find(function(v){ return v.voiceURI === pref.voice; })
+    || voices.find(function(v){ return /^en[-_]IN/i.test(v.lang); })
+    || voices.find(function(v){ return v.default; })
+    || voices[0];
+  voices.forEach(function(v){
+    var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')';
+    if (v === chosen) o.selected = true;
+    voiceSel.append(o);
+  });
+}
+loadVoices();
+if (synth.addEventListener) synth.addEventListener('voiceschanged', loadVoices); else synth.onvoiceschanged = loadVoices;
+rateSel.value = pref.rate;
+if (rateSel.value !== pref.rate) rateSel.value = '1';
+
+// ---- text for speech ----
+function say(t) {
+  return t
+    .replace(/→|=>|->/g, ' to ')
+    .replace(/≤|<=/g, ' is at most ')
+    .replace(/≥|>=/g, ' is at least ')
+    .replace(/!=|≠/g, ' is not equal to ')
+    .replace(/==/g, ' equals ')
+    .replace(/&&/g, ' and ')
+    .replace(/\|\|/g, ' or ')
+    .replace(/O\(/g, 'O of ')
+    .replace(/\^/g, ' to the power ')
+    .replace(/(\d)\s*%/g, '$1 percent')
+    .replace(/%/g, ' mod ')
+    .replace(/\*/g, ' times ')
+    .replace(/\+/g, ' plus ')
+    .replace(/\s-\s/g, ' minus ')
+    .replace(/=/g, ' equals ')
+    .replace(/</g, ' less than ')
+    .replace(/>/g, ' greater than ')
+    .replace(/\//g, ' slash ')
+    .replace(/[()·]/g, ', ')
+    .replace(/[\[\]{}`_~|]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .replace(/\s+([,.;:!?])/g, '$1')
+    .replace(/,+\s*([.;:!?])/g, '$1')
+    .replace(/^[,\s]+|,+$/g, '')
+    .trim();
+}
+function chunk(items) {
+  var out = [];
+  items.forEach(function(item) {
+    var text = say(item);
+    if (!text) return;
+    var sentences = text.match(/[^.!?;]+[.!?;]?/g) || [text];
+    var buf = '';
+    sentences.forEach(function(s) {
+      s = s.trim(); if (!s) return;
+      while (s.length > 180) {
+        var cut = s.lastIndexOf(',', 180); if (cut < 60) cut = s.lastIndexOf(' ', 180); if (cut < 60) cut = 180;
+        if (buf) { out.push(buf); buf = ''; }
+        out.push(s.slice(0, cut).trim()); s = s.slice(cut).replace(/^[,\s]+/, '');
+      }
+      if (buf && buf.length + s.length > 180) { out.push(buf); buf = ''; }
+      buf = buf ? buf + ' ' + s : s;
+    });
+    if (buf) out.push(buf);
+  });
+  return out;
+}
+// Sections that are code or raw data are not read aloud.
+var SKIP = /^(c\+\+|c|python3?|java|code|sample|sources|mapping|status|how it was checked)$/i;
+function cardTitle(card) {
+  var t = card.querySelector('summary .t'), h = card.querySelector('h3');
+  var txt = t ? t.textContent : h ? h.textContent : '';
+  if (/…$/.test(txt)) { var b = card.querySelector('summary .badge'); return 'Item ' + (b ? b.textContent : ''); }
+  return txt;
+}
+function cardItems(card) {
+  var parts = [cardTitle(card) + '.'];
+  var body = card.querySelector('.body');
+  if (body) {
+    var skip = false;
+    Array.prototype.forEach.call(body.children, function(n) {
+      var tag = n.tagName;
+      if (tag === 'H4') { var name = n.textContent.trim(); skip = SKIP.test(name); if (!skip) parts.push(name + '.'); return; }
+      if (skip || tag === 'A') return;
+      if (tag === 'P' && /^From .* in the repo\.?$/i.test(n.textContent.trim())) return;
+      if (tag === 'OL') { Array.prototype.forEach.call(n.children, function(li, i){ parts.push('Step ' + (i + 1) + '. ' + li.textContent); }); return; }
+      if (tag === 'UL') { Array.prototype.forEach.call(n.children, function(li){ parts.push(li.textContent); }); return; }
+      if (tag === 'PRE') { n.textContent.split('\n').forEach(function(l){ if (l.trim()) parts.push(l.trim() + '.'); }); return; }
+      parts.push(n.textContent);
+    });
+  } else {
+    // sheet cards: heading, pattern line, solution and check (skip the mapping and status lines)
+    Array.prototype.forEach.call(card.children, function(n) {
+      if (n.tagName === 'BUTTON' || n.tagName === 'H3') return;
+      var t = n.textContent.trim();
+      if (/^(External:|Status:)/.test(t)) return;
+      parts.push(t);
+    });
+  }
+  return parts;
+}
+
+// ---- playback ----
+var cur = null;
+function stopAll() {
+  if (cur) { cur.card.classList.remove('v-speaking'); cur.btn.textContent = '🔊 Listen'; cur.btn.setAttribute('aria-pressed', 'false'); }
+  cur = null;
+  synth.cancel();
+  pauseBtn.disabled = stopBtn.disabled = true;
+  pauseBtn.textContent = 'Pause';
+  status.textContent = '';
+}
+function next() {
+  var c = cur; if (!c) return;
+  if (!c.card.isConnected || c.i >= c.chunks.length) { stopAll(); return; }
+  var my = ++c.gen;
+  var u = new SpeechSynthesisUtterance(c.chunks[c.i]);
+  var v = voices.find(function(x){ return x.voiceURI === voiceSel.value; });
+  if (v) { u.voice = v; u.lang = v.lang; } else { u.lang = 'en-US'; }
+  u.rate = parseFloat(rateSel.value) || 1;
+  u.onend = function() { if (cur === c && c.gen === my) { c.i++; next(); } };
+  u.onerror = function(ev) {
+    if (cur === c && c.gen === my && ev.error !== 'interrupted' && ev.error !== 'canceled') { status.textContent = 'Speech stopped: ' + ev.error; stopAll(); }
+  };
+  synth.speak(u);
+}
+function toggle(card, btn) {
+  if (cur && cur.card === card) { stopAll(); return; }
+  stopAll();
+  var chunks = chunk(cardItems(card));
+  if (!chunks.length) { status.textContent = 'Nothing to read on this card.'; return; }
+  cur = {card: card, btn: btn, chunks: chunks, i: 0, gen: 0};
+  card.classList.add('v-speaking'); btn.textContent = 'Stop'; btn.setAttribute('aria-pressed', 'true');
+  pauseBtn.disabled = stopBtn.disabled = false;
+  status.textContent = 'Reading: ' + cardTitle(card);
+  next();
+}
+pauseBtn.addEventListener('click', function() {
+  if (!cur) return;
+  if (synth.paused) { synth.resume(); pauseBtn.textContent = 'Pause'; } else { synth.pause(); pauseBtn.textContent = 'Resume'; }
+});
+stopBtn.addEventListener('click', stopAll);
+function restartChunk() { if (cur) { cur.gen++; synth.cancel(); next(); } }
+voiceSel.addEventListener('change', function() { pref.voice = voiceSel.value; savePref(); restartChunk(); });
+rateSel.addEventListener('change', function() { pref.rate = rateSel.value; savePref(); restartChunk(); });
+document.querySelectorAll('nav.tabs button').forEach(function(b){ b.addEventListener('click', stopAll); });
+window.addEventListener('pagehide', function(){ synth.cancel(); });
+
+// ---- Listen buttons on every problem card (cards are rendered lazily, so watch for new ones) ----
+function makeBtn(card) {
+  var b = document.createElement('button');
+  b.type = 'button'; b.className = 'vbtn'; b.textContent = '🔊 Listen'; b.setAttribute('aria-pressed', 'false');
+  b.setAttribute('aria-label', 'Listen to this problem');
+  b.addEventListener('click', function(e){ e.preventDefault(); e.stopPropagation(); toggle(card, b); });
+  ['keydown', 'keyup'].forEach(function(ev){ b.addEventListener(ev, function(e){ if (e.key === ' ' || e.key === 'Enter') e.stopPropagation(); }); });
+  return b;
+}
+function decorate(root) {
+  var found = [];
+  if (root.matches && (root.matches('details.item') || root.matches('#sh-list .card'))) found.push(root);
+  if (root.querySelectorAll) root.querySelectorAll('details.item, #sh-list .card').forEach(function(x){ found.push(x); });
+  found.forEach(function(card) {
+    if (card.dataset.voice) return;
+    card.dataset.voice = '1';
+    var b = makeBtn(card);
+    var s = card.querySelector('summary'), h = card.querySelector('h3');
+    if (s) s.append(b); else if (h) h.after(b);
+  });
+}
+decorate(document);
+new MutationObserver(function(muts) {
+  muts.forEach(function(m){ m.addedNodes.forEach(function(n){ if (n.nodeType === 1) decorate(n); }); });
+}).observe(document.querySelector('main'), {childList: true, subtree: true});
 })();
 </script>
 </body>
