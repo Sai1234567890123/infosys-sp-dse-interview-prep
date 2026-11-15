@@ -1,0 +1,13 @@
+.voicebar{position:sticky;top:0;z-index:20;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:8px 12px;display:flex;gap:8px 12px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.voicebar label{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--muted)}
+.voicebar select{font:inherit;font-size:16px;max-width:220px;padding:5px 8px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text)}
+.voicebar button,.vbtn{border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:5px 12px;cursor:pointer;font:inherit;font-size:13px;min-height:36px}
+.voicebar button:disabled{opacity:.45;cursor:default}
+.voicebar #v-status{flex:1 1 200px;font-size:13px;color:var(--muted);overflow-wrap:anywhere}
+.vbtn{margin-left:auto}
+.item.v-speaking,.card.v-speaking{outline:2px solid var(--accent)}
+.item.v-speaking>summary{background:var(--accent-soft);border-radius:10px 10px 0 0}
+@media (max-width:640px){
+  .voicebar select{max-width:100%;flex:1 1 140px}
+  .voicebar button{flex:0 0 auto}
+}
